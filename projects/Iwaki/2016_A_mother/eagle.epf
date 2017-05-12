@@ -1,0 +1,35 @@
+[Eagle]
+Version="06 02 00"
+Platform="Windows"
+Serial="6E30A60700-LSR-WLM-3CS"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/hukuzawa/connector.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/hukuzawa/FP-21T for MITS.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/hukuzawa/5051.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/hukuzawa/FixLib.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/iwaki/my_connector.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/iwaki/ceralock.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/hukuzawa/switch.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/my_lib/FP-21T for MITS.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/Isojima/IsojimaTestProj/IsojimaTestProj/FixLib.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/Isojima/IsojimaTestProj/My_NJM7805.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/Isojima/IsojimaTestProj/IsojimaTestProj/my_connector.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/Isojima/IsojimaTestProj/IsojimaTestProj/My_rcl.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/Isojima/IsojimaTestProj/IsojimaTestProj/my_led.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/hukuzawa/Orig_Lib.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/iwaki/Toggle_Switch.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/iwaki/FET_kai.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="0 0 680 695"
+State=2
+Number=0
+
+[Desktop]
+Screen="1366 768"
+Window="Win_1"

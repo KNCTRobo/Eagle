@@ -1,0 +1,28 @@
+[Eagle]
+Version="06 02 00"
+Platform="Windows"
+Serial="6E30A60700-LSR-WLM-3CS"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/Program Files/EAGLE-4.16r2/lbr/my_lib/FP-21T for MITS.lbr"
+UsedLibrary="C:/Program Files/EAGLE-4.16r2/lbr/my_lib/supply1.lbr"
+UsedLibrary="C:/Program Files/EAGLE-4.16r2/lbr/my_lib/supply2.lbr"
+UsedLibrary="C:/Documents and Settings/robot/My Documents/Eagle6.2_DATA/Isojima/IsojimaTestProj/FixLib.lbr"
+UsedLibrary="C:/Documents and Settings/robot/My Documents/Eagle6.2_DATA/Isojima/IsojimaTestProj/My_NJM7805.lbr"
+UsedLibrary="C:/Documents and Settings/robot/My Documents/Eagle6.2_DATA/Isojima/IsojimaTestProj/My_rcl.lbr"
+UsedLibrary="C:/Documents and Settings/robot/My Documents/Eagle6.2_DATA/Isojima/IsojimaTestProj/My_transistor.lbr"
+UsedLibrary="C:/Documents and Settings/robot/My Documents/Eagle6.2_DATA/Isojima/IsojimaTestProj/my_connector.lbr"
+UsedLibrary="C:/Documents and Settings/robot/My Documents/Eagle6.2_DATA/Isojima/IsojimaTestProj/my_led.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="42 154 774 553"
+State=2
+Number=0
+
+[Desktop]
+Screen="1024 768"
+Window="Win_1"
