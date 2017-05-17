@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -404,6 +404,70 @@ CERAMIC RESONATOR</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="FH105">
+<description>FH105-1xXXSG
+ピンソケット</description>
+<packages>
+<package name="FH105-1X8SG">
+<pad name="4" x="-1.27" y="0" drill="0.8"/>
+<pad name="5" x="1.27" y="0" drill="0.8"/>
+<pad name="3" x="-3.81" y="0" drill="0.8"/>
+<pad name="6" x="3.81" y="0" drill="0.8"/>
+<pad name="2" x="-6.35" y="0" drill="0.8"/>
+<pad name="7" x="6.35" y="0" drill="0.8"/>
+<wire x1="-10.41" y1="1.25" x2="-10.41" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-10.41" y1="-1.25" x2="10.41" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="10.41" y1="-1.25" x2="10.41" y2="1.25" width="0.127" layer="21"/>
+<wire x1="10.41" y1="1.25" x2="-10.41" y2="1.25" width="0.127" layer="21"/>
+<pad name="1" x="-8.89" y="0" drill="0.8"/>
+<pad name="8" x="8.89" y="0" drill="0.8"/>
+<text x="-10" y="1.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-10" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="M">
+<pin name="P$1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.4064" layer="94"/>
+</symbol>
+<symbol name="MV">
+<pin name="P$1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.4064" layer="94"/>
+<text x="0" y="-1.27" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="8PIN">
+<gates>
+<gate name="-3" symbol="M" x="2.54" y="7.62" addlevel="always"/>
+<gate name="-4" symbol="M" x="2.54" y="2.54" addlevel="always"/>
+<gate name="-5" symbol="M" x="2.54" y="-2.54" addlevel="always"/>
+<gate name="-6" symbol="M" x="2.54" y="-7.62" addlevel="always"/>
+<gate name="-2" symbol="M" x="2.54" y="12.7" addlevel="always"/>
+<gate name="-8" symbol="M" x="2.54" y="-17.78" addlevel="always"/>
+<gate name="-7" symbol="M" x="2.54" y="-12.7" addlevel="always"/>
+<gate name="-1" symbol="MV" x="2.54" y="17.78" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="FH105-1X8SG">
+<connects>
+<connect gate="-1" pin="P$1" pad="1"/>
+<connect gate="-2" pin="P$1" pad="2"/>
+<connect gate="-3" pin="P$1" pad="3"/>
+<connect gate="-4" pin="P$1" pad="4"/>
+<connect gate="-5" pin="P$1" pad="5"/>
+<connect gate="-6" pin="P$1" pad="6"/>
+<connect gate="-7" pin="P$1" pad="7"/>
+<connect gate="-8" pin="P$1" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -419,6 +483,9 @@ CERAMIC RESONATOR</description>
 <part name="J2" library="3M_372xx" deviceset="3X1" device="A"/>
 <part name="Q1" library="FP-21T for MITS" deviceset="CERALOCK" device=""/>
 <part name="NJM1" library="My_NJM7805" deviceset="NJM7805" device=""/>
+<part name="U$1" library="FH105" deviceset="8PIN" device=""/>
+<part name="U$2" library="FH105" deviceset="8PIN" device=""/>
+<part name="U$3" library="FH105" deviceset="8PIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -435,6 +502,30 @@ CERAMIC RESONATOR</description>
 <instance part="J2" gate="-3" x="-78.74" y="17.78"/>
 <instance part="Q1" gate="G$1" x="-2.54" y="5.08" rot="R90"/>
 <instance part="NJM1" gate="G$1" x="-66.04" y="48.26"/>
+<instance part="U$1" gate="-3" x="27.94" y="-15.24"/>
+<instance part="U$1" gate="-4" x="27.94" y="-20.32"/>
+<instance part="U$1" gate="-5" x="27.94" y="-25.4"/>
+<instance part="U$1" gate="-6" x="27.94" y="-30.48"/>
+<instance part="U$1" gate="-2" x="27.94" y="-10.16"/>
+<instance part="U$1" gate="-8" x="27.94" y="-40.64"/>
+<instance part="U$1" gate="-7" x="27.94" y="-35.56"/>
+<instance part="U$1" gate="-1" x="27.94" y="-5.08"/>
+<instance part="U$2" gate="-3" x="66.04" y="-15.24"/>
+<instance part="U$2" gate="-4" x="66.04" y="-20.32"/>
+<instance part="U$2" gate="-5" x="66.04" y="-25.4"/>
+<instance part="U$2" gate="-6" x="66.04" y="-30.48"/>
+<instance part="U$2" gate="-2" x="66.04" y="-10.16"/>
+<instance part="U$2" gate="-8" x="66.04" y="-40.64"/>
+<instance part="U$2" gate="-7" x="66.04" y="-35.56"/>
+<instance part="U$2" gate="-1" x="66.04" y="-5.08"/>
+<instance part="U$3" gate="-3" x="83.82" y="-15.24"/>
+<instance part="U$3" gate="-4" x="83.82" y="-20.32"/>
+<instance part="U$3" gate="-5" x="83.82" y="-25.4"/>
+<instance part="U$3" gate="-6" x="83.82" y="-30.48"/>
+<instance part="U$3" gate="-2" x="83.82" y="-10.16"/>
+<instance part="U$3" gate="-8" x="83.82" y="-40.64"/>
+<instance part="U$3" gate="-7" x="83.82" y="-35.56"/>
+<instance part="U$3" gate="-1" x="83.82" y="-5.08"/>
 </instances>
 <busses>
 </busses>
