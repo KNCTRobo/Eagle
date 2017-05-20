@@ -700,9 +700,9 @@
 <gate name="1-1" symbol="MV" x="2.54" y="5.08" addlevel="always" swaplevel="1"/>
 <gate name="1-2" symbol="M" x="2.54" y="0" addlevel="always" swaplevel="1"/>
 <gate name="1-3" symbol="M" x="2.54" y="-5.08" addlevel="always" swaplevel="1"/>
-<gate name="2-1" symbol="M" x="12.7" y="5.08"/>
-<gate name="2-2" symbol="M" x="12.7" y="0"/>
-<gate name="2-3" symbol="M" x="12.7" y="-5.08"/>
+<gate name="2-1" symbol="M" x="12.7" y="5.08" addlevel="always"/>
+<gate name="2-2" symbol="M" x="12.7" y="0" addlevel="always"/>
+<gate name="2-3" symbol="M" x="12.7" y="-5.08" addlevel="always"/>
 </gates>
 <devices>
 <device name="A" package="37206-62A3-003">
@@ -726,10 +726,10 @@
 <gate name="1-3" symbol="M" x="2.54" y="-5.08" addlevel="always" swaplevel="1"/>
 <gate name="1-2" symbol="M" x="2.54" y="0" addlevel="always" swaplevel="1"/>
 <gate name="1-4" symbol="M" x="2.54" y="-10.16" addlevel="always" swaplevel="1"/>
-<gate name="2-1" symbol="M" x="12.7" y="5.08"/>
-<gate name="2-2" symbol="M" x="12.7" y="0"/>
-<gate name="2-3" symbol="M" x="12.7" y="-5.08"/>
-<gate name="2-4" symbol="M" x="12.7" y="-10.16"/>
+<gate name="2-1" symbol="M" x="12.7" y="5.08" addlevel="always"/>
+<gate name="2-2" symbol="M" x="12.7" y="0" addlevel="always"/>
+<gate name="2-3" symbol="M" x="12.7" y="-5.08" addlevel="always"/>
+<gate name="2-4" symbol="M" x="12.7" y="-10.16" addlevel="always"/>
 </gates>
 <devices>
 <device name="" package="37208-62A3-004">
@@ -751,22 +751,22 @@
 </deviceset>
 <deviceset name="4X4">
 <gates>
-<gate name="2-1" symbol="M" x="-2.54" y="7.62"/>
-<gate name="2-2" symbol="M" x="-2.54" y="2.54"/>
-<gate name="2-3" symbol="M" x="-2.54" y="-2.54"/>
-<gate name="2-4" symbol="M" x="-2.54" y="-7.62"/>
-<gate name="3-1" symbol="M" x="7.62" y="7.62"/>
-<gate name="3-2" symbol="M" x="7.62" y="2.54"/>
-<gate name="3-3" symbol="M" x="7.62" y="-2.54"/>
-<gate name="3-4" symbol="M" x="7.62" y="-7.62"/>
-<gate name="1-2" symbol="M" x="-12.7" y="2.54"/>
-<gate name="1-3" symbol="M" x="-12.7" y="-2.54"/>
-<gate name="1-4" symbol="M" x="-12.7" y="-7.62"/>
-<gate name="4-1" symbol="M" x="17.78" y="7.62"/>
-<gate name="4-2" symbol="M" x="17.78" y="2.54"/>
-<gate name="4-3" symbol="M" x="17.78" y="-2.54"/>
-<gate name="4-4" symbol="M" x="17.78" y="-7.62"/>
-<gate name="1-1" symbol="MV" x="-12.7" y="7.62"/>
+<gate name="2-1" symbol="M" x="-2.54" y="7.62" addlevel="always"/>
+<gate name="2-2" symbol="M" x="-2.54" y="2.54" addlevel="always"/>
+<gate name="2-3" symbol="M" x="-2.54" y="-2.54" addlevel="always"/>
+<gate name="2-4" symbol="M" x="-2.54" y="-7.62" addlevel="always"/>
+<gate name="3-1" symbol="M" x="7.62" y="7.62" addlevel="always"/>
+<gate name="3-2" symbol="M" x="7.62" y="2.54" addlevel="always"/>
+<gate name="3-3" symbol="M" x="7.62" y="-2.54" addlevel="always"/>
+<gate name="3-4" symbol="M" x="7.62" y="-7.62" addlevel="always"/>
+<gate name="1-2" symbol="M" x="-12.7" y="2.54" addlevel="always"/>
+<gate name="1-3" symbol="M" x="-12.7" y="-2.54" addlevel="always"/>
+<gate name="1-4" symbol="M" x="-12.7" y="-7.62" addlevel="always"/>
+<gate name="4-1" symbol="M" x="17.78" y="7.62" addlevel="always"/>
+<gate name="4-2" symbol="M" x="17.78" y="2.54" addlevel="always"/>
+<gate name="4-3" symbol="M" x="17.78" y="-2.54" addlevel="always"/>
+<gate name="4-4" symbol="M" x="17.78" y="-7.62" addlevel="always"/>
+<gate name="1-1" symbol="MV" x="-12.7" y="7.62" addlevel="always"/>
 </gates>
 <devices>
 <device name="A" package="37216-62A3-004">
@@ -819,18 +819,18 @@
 </deviceset>
 <deviceset name="3X4">
 <gates>
-<gate name="3-2" symbol="M" x="7.62" y="0"/>
-<gate name="3-1" symbol="M" x="7.62" y="5.08"/>
-<gate name="3-3" symbol="M" x="7.62" y="-5.08"/>
-<gate name="2-1" symbol="M" x="-2.54" y="5.08"/>
-<gate name="2-2" symbol="M" x="-2.54" y="0"/>
-<gate name="2-3" symbol="M" x="-2.54" y="-5.08"/>
-<gate name="4-3" symbol="M" x="17.78" y="-5.08"/>
-<gate name="4-2" symbol="M" x="17.78" y="0"/>
-<gate name="4-1" symbol="M" x="17.78" y="5.08"/>
-<gate name="1-3" symbol="M" x="-12.7" y="-5.08"/>
-<gate name="1-2" symbol="M" x="-12.7" y="0"/>
-<gate name="1-1" symbol="MV" x="-12.7" y="5.08"/>
+<gate name="3-2" symbol="M" x="7.62" y="0" addlevel="always"/>
+<gate name="3-1" symbol="M" x="7.62" y="5.08" addlevel="always"/>
+<gate name="3-3" symbol="M" x="7.62" y="-5.08" addlevel="always"/>
+<gate name="2-1" symbol="M" x="-2.54" y="5.08" addlevel="always"/>
+<gate name="2-2" symbol="M" x="-2.54" y="0" addlevel="always"/>
+<gate name="2-3" symbol="M" x="-2.54" y="-5.08" addlevel="always"/>
+<gate name="4-3" symbol="M" x="17.78" y="-5.08" addlevel="always"/>
+<gate name="4-2" symbol="M" x="17.78" y="0" addlevel="always"/>
+<gate name="4-1" symbol="M" x="17.78" y="5.08" addlevel="always"/>
+<gate name="1-3" symbol="M" x="-12.7" y="-5.08" addlevel="always"/>
+<gate name="1-2" symbol="M" x="-12.7" y="0" addlevel="always"/>
+<gate name="1-1" symbol="MV" x="-12.7" y="5.08" addlevel="always"/>
 </gates>
 <devices>
 <device name="A" package="37212-62A3-003">
