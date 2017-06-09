@@ -336,10 +336,12 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.2.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.2.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.2.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.2.0/lbr/zilog.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/iwaki/relay.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/iwaki/photocoupler.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="156 156 755 555"
+Loc="78 78 677 477"
 State=1
 Number=0
 
