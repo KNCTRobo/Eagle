@@ -4344,7 +4344,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="IC1" library="FP-21T for MITS" deviceset="PIC16F648" device=""/>
 <part name="Q1" library="FP-21T for MITS" deviceset="CERALOCK" device=""/>
 <part name="NJM1" library="My_NJM7805" deviceset="NJM7805" device=""/>
-<part name="U$1" library="FH105" deviceset="8PIN" device=""/>
+<part name="SIGNALPORT" library="FH105" deviceset="8PIN" device=""/>
 <part name="POWERNPORT" library="FH105" deviceset="8PIN" device=""/>
 <part name="POWERPPORT" library="FH105" deviceset="8PIN" device=""/>
 <part name="J1" library="3M_372xx" deviceset="3X2" device="A"/>
@@ -4369,14 +4369,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="IC1" gate="G$1" x="-48.26" y="0"/>
 <instance part="Q1" gate="G$1" x="-25.4" y="5.08" rot="R90"/>
 <instance part="NJM1" gate="G$1" x="-76.2" y="50.8" rot="R90"/>
-<instance part="U$1" gate="-3" x="27.94" y="-15.24"/>
-<instance part="U$1" gate="-4" x="27.94" y="-20.32"/>
-<instance part="U$1" gate="-5" x="27.94" y="-25.4"/>
-<instance part="U$1" gate="-6" x="27.94" y="-30.48"/>
-<instance part="U$1" gate="-2" x="27.94" y="-10.16"/>
-<instance part="U$1" gate="-8" x="27.94" y="-40.64"/>
-<instance part="U$1" gate="-7" x="27.94" y="-35.56"/>
-<instance part="U$1" gate="-1" x="27.94" y="-5.08"/>
+<instance part="SIGNALPORT" gate="-3" x="27.94" y="-15.24"/>
+<instance part="SIGNALPORT" gate="-4" x="27.94" y="-20.32"/>
+<instance part="SIGNALPORT" gate="-5" x="27.94" y="-25.4"/>
+<instance part="SIGNALPORT" gate="-6" x="27.94" y="-30.48"/>
+<instance part="SIGNALPORT" gate="-2" x="27.94" y="-10.16"/>
+<instance part="SIGNALPORT" gate="-8" x="27.94" y="-40.64"/>
+<instance part="SIGNALPORT" gate="-7" x="27.94" y="-35.56"/>
+<instance part="SIGNALPORT" gate="-1" x="27.94" y="-5.08"/>
 <instance part="POWERNPORT" gate="-3" x="73.66" y="-30.48" rot="MR0"/>
 <instance part="POWERNPORT" gate="-4" x="73.66" y="-35.56" rot="MR0"/>
 <instance part="POWERNPORT" gate="-5" x="73.66" y="-40.64" rot="MR0"/>
@@ -4447,7 +4447,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="-35.56" y1="33.02" x2="-35.56" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="33.02" x2="-35.56" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="-1" pin="P$1"/>
+<pinref part="SIGNALPORT" gate="-1" pin="P$1"/>
 <wire x1="-35.56" y1="15.24" x2="22.86" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="15.24" x2="22.86" y2="-5.08" width="0.1524" layer="91"/>
 <junction x="-35.56" y="15.24"/>
@@ -4462,6 +4462,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="-53.34" y1="45.72" x2="-53.34" y2="53.34" width="0.1524" layer="91"/>
 <junction x="-53.34" y="53.34"/>
+<junction x="-35.56" y="33.02"/>
 </segment>
 </net>
 <net name="9VIN" class="0">
@@ -4511,7 +4512,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-20.32" y1="5.08" x2="20.32" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="5.08" x2="20.32" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-20.32" y="5.08"/>
-<pinref part="U$1" gate="-2" pin="P$1"/>
+<pinref part="SIGNALPORT" gate="-2" pin="P$1"/>
 <wire x1="20.32" y1="-10.16" x2="22.86" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="-20.32" y="-17.78"/>
 <junction x="-93.98" y="27.94"/>
@@ -4552,7 +4553,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <wire x1="-2.54" y1="-5.08" x2="17.78" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="-5.08" x2="17.78" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="-3" pin="P$1"/>
+<pinref part="SIGNALPORT" gate="-3" pin="P$1"/>
 <wire x1="17.78" y1="-15.24" x2="22.86" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -4564,7 +4565,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <wire x1="-2.54" y1="-7.62" x2="15.24" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="-7.62" x2="15.24" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="-4" pin="P$1"/>
+<pinref part="SIGNALPORT" gate="-4" pin="P$1"/>
 <wire x1="15.24" y1="-20.32" x2="22.86" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -4576,7 +4577,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <wire x1="-2.54" y1="-10.16" x2="12.7" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="-10.16" x2="12.7" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="-5" pin="P$1"/>
+<pinref part="SIGNALPORT" gate="-5" pin="P$1"/>
 <wire x1="12.7" y1="-25.4" x2="22.86" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -4588,7 +4589,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <wire x1="-2.54" y1="-12.7" x2="10.16" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="-12.7" x2="10.16" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="-6" pin="P$1"/>
+<pinref part="SIGNALPORT" gate="-6" pin="P$1"/>
 <wire x1="10.16" y1="-30.48" x2="22.86" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -4600,7 +4601,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <wire x1="-2.54" y1="-15.24" x2="7.62" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="-15.24" x2="7.62" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="-7" pin="P$1"/>
+<pinref part="SIGNALPORT" gate="-7" pin="P$1"/>
 <wire x1="7.62" y1="-35.56" x2="22.86" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -4612,7 +4613,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <wire x1="-2.54" y1="-17.78" x2="5.08" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="-17.78" x2="5.08" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="-8" pin="P$1"/>
+<pinref part="SIGNALPORT" gate="-8" pin="P$1"/>
 <wire x1="5.08" y1="-40.64" x2="22.86" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>

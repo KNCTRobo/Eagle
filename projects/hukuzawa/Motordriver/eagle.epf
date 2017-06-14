@@ -342,11 +342,12 @@ UsedLibrary="C:/Users/robo/Documents/eagle/lbr/iwaki/diode.lbr"
 UsedLibrary="C:/Users/robo/Documents/eagle/lbr/my_lib/FP-21T for MITS.lbr"
 UsedLibrary="C:/Users/robo/Documents/eagle/lbr/iwaki/BP341L_1.lbr"
 UsedLibrary="Powerio.lbr"
+UsedLibrary="testLib.lbr"
 
 [Win_1]
 Type="Schematic Editor"
-Loc="156 156 755 555"
-State=1
+Loc="78 78 677 477"
+State=2
 Number=1
 File="MD2017_Ctrl.sch"
 View="-105.976 -66.352 105.976 66.352"
