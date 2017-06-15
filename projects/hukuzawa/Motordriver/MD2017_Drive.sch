@@ -4441,19 +4441,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-27.94" y1="-2.54" x2="-33.02" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="-2.54" x2="-33.02" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-27.94" y="-2.54"/>
-<wire x1="-33.02" y1="-12.7" x2="-33.02" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="-12.7" x2="-33.02" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="-15.24" x2="-33.02" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="-40.64" x2="-33.02" y2="-55.88" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="-40.64" x2="-33.02" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="-27.94" y="-40.64"/>
 <junction x="-33.02" y="-40.64"/>
-<pinref part="U$5" gate="R2" pin="S"/>
-<wire x1="-55.88" y1="17.78" x2="-58.42" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="-58.42" y1="17.78" x2="-58.42" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="R1" pin="O"/>
-<wire x1="-58.42" y1="-12.7" x2="-55.88" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="-12.7" x2="-33.02" y2="-12.7" width="0.1524" layer="91"/>
-<junction x="-55.88" y="-12.7"/>
-<junction x="-33.02" y="-12.7"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="-83.82" y1="38.1" x2="-93.98" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="38.1" x2="-93.98" y2="-55.88" width="0.1524" layer="91"/>
@@ -4485,6 +4478,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="81.28" y1="10.16" x2="81.28" y2="5.08" width="0.1524" layer="91"/>
 <junction x="81.28" y="10.16"/>
 <label x="78.74" y="53.34" size="1.778" layer="95" rot="MR0"/>
+<pinref part="U$5" gate="R2" pin="O"/>
+<wire x1="-58.42" y1="7.62" x2="-58.42" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="-2.54" x2="-58.42" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="7.62" x2="-58.42" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="R1" pin="S"/>
+<wire x1="-55.88" y1="-2.54" x2="-58.42" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="-58.42" y="-2.54"/>
+<wire x1="-33.02" y1="-15.24" x2="-58.42" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="-15.24" x2="-58.42" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="-33.02" y="-15.24"/>
 </segment>
 </net>
 <net name="BDIR" class="0">
@@ -4546,13 +4549,15 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="S"/>
-<wire x1="-38.1" y1="25.4" x2="-38.1" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="R2" pin="O"/>
-<wire x1="-38.1" y1="7.62" x2="-55.88" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="R1" pin="S"/>
-<wire x1="-55.88" y1="-2.54" x2="-38.1" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="25.4" x2="-38.1" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="17.78" x2="-38.1" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-2.54" x2="-38.1" y2="7.62" width="0.1524" layer="91"/>
-<junction x="-38.1" y="7.62"/>
+<pinref part="U$5" gate="R1" pin="O"/>
+<wire x1="-55.88" y1="-12.7" x2="-38.1" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-12.7" x2="-38.1" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="R2" pin="S"/>
+<wire x1="-55.88" y1="17.78" x2="-38.1" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-38.1" y="17.78"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -4561,8 +4566,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-68.58" y1="-20.32" x2="-68.58" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="R2" pin="P"/>
 <wire x1="-68.58" y1="12.7" x2="-63.5" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="R2" pin="S"/>
-<wire x1="-55.88" y1="-22.86" x2="-55.88" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-20.32" x2="-53.34" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-20.32" x2="-53.34" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="R2" pin="O"/>
+<wire x1="-53.34" y1="-33.02" x2="-55.88" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -4570,19 +4577,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-66.04" y1="-17.78" x2="-66.04" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="R1" pin="P"/>
 <wire x1="-66.04" y1="-7.62" x2="-63.5" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="R1" pin="S"/>
-<wire x1="-55.88" y1="-40.64" x2="-53.34" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="-40.64" x2="-53.34" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="-17.78" x2="-66.04" y2="-17.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U$6" gate="R2" pin="O"/>
-<wire x1="-55.88" y1="-33.02" x2="-58.42" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="-58.42" y1="-33.02" x2="-58.42" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-17.78" x2="-50.8" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-17.78" x2="-50.8" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="R1" pin="O"/>
-<wire x1="-58.42" y1="-50.8" x2="-55.88" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-50.8" x2="-55.88" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -4712,6 +4711,15 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <pinref part="U$8" gate="C" pin="EMIT"/>
 <wire x1="7.62" y1="-38.1" x2="2.54" y2="-38.1" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$6" gate="R2" pin="S"/>
+<wire x1="-55.88" y1="-22.86" x2="-58.42" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="-22.86" x2="-58.42" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="R1" pin="S"/>
+<wire x1="-58.42" y1="-40.64" x2="-55.88" y2="-40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
