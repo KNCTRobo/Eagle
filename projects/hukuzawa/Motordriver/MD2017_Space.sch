@@ -134,9 +134,9 @@
 </class>
 </classes>
 <parts>
-<part name="U$1" library="FH105" deviceset="8PIN" device=""/>
-<part name="U$2" library="FH105" deviceset="8PIN" device=""/>
-<part name="U$3" library="FH105" deviceset="8PIN" device=""/>
+<part name="SIGNALPORT" library="FH105" deviceset="8PIN" device=""/>
+<part name="POWERPPORT" library="FH105" deviceset="8PIN" device=""/>
+<part name="POWERNPORT" library="FH105" deviceset="8PIN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -144,30 +144,30 @@
 <frame x1="-101.6" y1="-63.5" x2="101.6" y2="63.5" columns="8" rows="5" layer="91"/>
 </plain>
 <instances>
-<instance part="U$1" gate="-3" x="30.48" y="-5.08"/>
-<instance part="U$1" gate="-4" x="30.48" y="-10.16"/>
-<instance part="U$1" gate="-5" x="30.48" y="-15.24"/>
-<instance part="U$1" gate="-6" x="30.48" y="-20.32"/>
-<instance part="U$1" gate="-2" x="30.48" y="0"/>
-<instance part="U$1" gate="-8" x="30.48" y="-30.48"/>
-<instance part="U$1" gate="-7" x="30.48" y="-25.4"/>
-<instance part="U$1" gate="-1" x="30.48" y="5.08"/>
-<instance part="U$2" gate="-3" x="58.42" y="-5.08"/>
-<instance part="U$2" gate="-4" x="58.42" y="-10.16"/>
-<instance part="U$2" gate="-5" x="58.42" y="-15.24"/>
-<instance part="U$2" gate="-6" x="58.42" y="-20.32"/>
-<instance part="U$2" gate="-2" x="58.42" y="0"/>
-<instance part="U$2" gate="-8" x="58.42" y="-30.48"/>
-<instance part="U$2" gate="-7" x="58.42" y="-25.4"/>
-<instance part="U$2" gate="-1" x="58.42" y="5.08"/>
-<instance part="U$3" gate="-3" x="83.82" y="-5.08"/>
-<instance part="U$3" gate="-4" x="83.82" y="-10.16"/>
-<instance part="U$3" gate="-5" x="83.82" y="-15.24"/>
-<instance part="U$3" gate="-6" x="83.82" y="-20.32"/>
-<instance part="U$3" gate="-2" x="83.82" y="0"/>
-<instance part="U$3" gate="-8" x="83.82" y="-30.48"/>
-<instance part="U$3" gate="-7" x="83.82" y="-25.4"/>
-<instance part="U$3" gate="-1" x="83.82" y="5.08"/>
+<instance part="SIGNALPORT" gate="-3" x="30.48" y="-5.08"/>
+<instance part="SIGNALPORT" gate="-4" x="30.48" y="-10.16"/>
+<instance part="SIGNALPORT" gate="-5" x="30.48" y="-15.24"/>
+<instance part="SIGNALPORT" gate="-6" x="30.48" y="-20.32"/>
+<instance part="SIGNALPORT" gate="-2" x="30.48" y="0"/>
+<instance part="SIGNALPORT" gate="-8" x="30.48" y="-30.48"/>
+<instance part="SIGNALPORT" gate="-7" x="30.48" y="-25.4"/>
+<instance part="SIGNALPORT" gate="-1" x="30.48" y="5.08"/>
+<instance part="POWERPPORT" gate="-3" x="58.42" y="-5.08"/>
+<instance part="POWERPPORT" gate="-4" x="58.42" y="-10.16"/>
+<instance part="POWERPPORT" gate="-5" x="58.42" y="-15.24"/>
+<instance part="POWERPPORT" gate="-6" x="58.42" y="-20.32"/>
+<instance part="POWERPPORT" gate="-2" x="58.42" y="0"/>
+<instance part="POWERPPORT" gate="-8" x="58.42" y="-30.48"/>
+<instance part="POWERPPORT" gate="-7" x="58.42" y="-25.4"/>
+<instance part="POWERPPORT" gate="-1" x="58.42" y="5.08"/>
+<instance part="POWERNPORT" gate="-3" x="83.82" y="-5.08"/>
+<instance part="POWERNPORT" gate="-4" x="83.82" y="-10.16"/>
+<instance part="POWERNPORT" gate="-5" x="83.82" y="-15.24"/>
+<instance part="POWERNPORT" gate="-6" x="83.82" y="-20.32"/>
+<instance part="POWERNPORT" gate="-2" x="83.82" y="0"/>
+<instance part="POWERNPORT" gate="-8" x="83.82" y="-30.48"/>
+<instance part="POWERNPORT" gate="-7" x="83.82" y="-25.4"/>
+<instance part="POWERNPORT" gate="-1" x="83.82" y="5.08"/>
 </instances>
 <busses>
 </busses>

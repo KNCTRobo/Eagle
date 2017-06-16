@@ -42,12 +42,11 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
@@ -58,12 +57,6 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="121" name="_tplace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bplace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
-<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 </layers>
 <board>
 <plain>
@@ -71,6 +64,7 @@
 <wire x1="70" y1="0" x2="70" y2="70" width="0" layer="20"/>
 <wire x1="70" y1="70" x2="0" y2="70" width="0" layer="20"/>
 <wire x1="0" y1="70" x2="0" y2="0" width="0" layer="20"/>
+<rectangle x1="23" y1="5" x2="58.5" y2="38" layer="45"/>
 </plain>
 <libraries>
 <library name="FH105">
@@ -92,17 +86,6 @@
 <pad name="8" x="8.89" y="0" drill="0.8"/>
 <text x="-10" y="1.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-10" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-</library>
-<library name="FP-21T for MITS">
-<description>MITS Circuit Library</description>
-<packages>
-<package name="HOLE3.3">
-<hole x="0" y="0" drill="1.2"/>
-<circle x="0" y="0" radius="3.25" width="0.127" layer="21"/>
-<text x="0" y="-1.46" size="0.6096" layer="21">D3,3mm Drill</text>
-<text x="0" y="-4.21" size="0.6096" layer="21">M3 Bolt Outline</text>
 </package>
 </packages>
 </library>
@@ -294,12 +277,8 @@ May. 10, 2017&lt;br&gt;
 </autorouter>
 <elements>
 <element name="SIGNALPORT" library="FH105" package="FH105-1X8SG" value="8PIN" x="35" y="65" rot="R180"/>
-<element name="POWERPPORT" library="FH105" package="FH105-1X8SG" value="8PIN" x="67" y="18" rot="R90"/>
-<element name="POWERNPORT" library="FH105" package="FH105-1X8SG" value="8PIN" x="3" y="18" rot="R90"/>
-<element name="H1" library="FP-21T for MITS" package="HOLE3.3" value="HOLE3.3M3BOLT" x="67" y="3"/>
-<element name="H2" library="FP-21T for MITS" package="HOLE3.3" value="HOLE3.3M3BOLT" x="3" y="3"/>
-<element name="H3" library="FP-21T for MITS" package="HOLE3.3" value="HOLE3.3M3BOLT" x="67" y="67"/>
-<element name="H4" library="FP-21T for MITS" package="HOLE3.3" value="HOLE3.3M3BOLT" x="3" y="67"/>
+<element name="POWERPPORT" library="FH105" package="FH105-1X8SG" value="8PIN" x="3" y="18" rot="R90"/>
+<element name="POWERNPORT" library="FH105" package="FH105-1X8SG" value="8PIN" x="67" y="18" rot="R90"/>
 </elements>
 <signals>
 </signals>
