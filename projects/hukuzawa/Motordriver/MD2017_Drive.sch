@@ -482,56 +482,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="diode">
-<packages>
-<package name="DIODE7.5">
-<wire x1="1.905" y1="0.889" x2="-1.905" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="-0.889" x2="1.905" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="0" x2="-2.794" y2="0" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="0.889" x2="-1.905" y2="0" width="0.1524" layer="21"/>
-<wire x1="2.794" y1="0" x2="1.905" y2="0" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="-0.889" x2="1.905" y2="0" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="0" x2="-1.905" y2="-0.889" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="0" x2="1.905" y2="0.889" width="0.1524" layer="21"/>
-<text x="-1.905" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.905" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.27" y1="-0.889" x2="-0.762" y2="0.889" layer="21"/>
-<pad name="PK" x="-3.81" y="0" drill="0.8"/>
-<pad name="PA" x="3.81" y="0" drill="0.8"/>
-</package>
-</packages>
-<symbols>
-<symbol name="D-">
-<wire x1="-3.81" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-3.81" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<text x="0" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="0" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DIODE7.5" prefix="D" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="D-" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="DIODE7.5">
-<connects>
-<connect gate="G$1" pin="A" pad="PA"/>
-<connect gate="G$1" pin="C" pad="PK"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="FP-21T for MITS">
 <description>MITS Circuit Library</description>
 <packages>
@@ -4156,6 +4106,56 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="diode">
+<packages>
+<package name="DIODE7.5">
+<wire x1="1.905" y1="0.889" x2="-1.905" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-0.889" x2="1.905" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="0" x2="-2.794" y2="0" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="0.889" x2="-1.905" y2="0" width="0.1524" layer="21"/>
+<wire x1="2.794" y1="0" x2="1.905" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-0.889" x2="1.905" y2="0" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="0" x2="1.905" y2="0.889" width="0.1524" layer="21"/>
+<text x="-1.905" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.905" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-0.889" x2="-0.762" y2="0.889" layer="21"/>
+<pad name="PK" x="-3.81" y="0" drill="1"/>
+<pad name="PA" x="3.81" y="0" drill="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="D-">
+<wire x1="-3.81" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<text x="0" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="0" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DIODE7.5" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="D-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIODE7.5">
+<connects>
+<connect gate="G$1" pin="A" pad="PA"/>
+<connect gate="G$1" pin="C" pad="PK"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4174,8 +4174,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="U$6" library="relay" deviceset="RELAY(L)" device=""/>
 <part name="U$7" library="photocoupler" deviceset="TLP521-4" device=""/>
 <part name="U$8" library="photocoupler" deviceset="TLP521-4" device=""/>
-<part name="D1" library="diode" deviceset="DIODE7.5" device=""/>
-<part name="D2" library="diode" deviceset="DIODE7.5" device=""/>
 <part name="LED1" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R3216W"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R3216W"/>
@@ -4188,6 +4186,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="U$9" library="Powerio" deviceset="2P" device=""/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R3216W"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="D1" library="diode" deviceset="DIODE7.5" device=""/>
+<part name="D2" library="diode" deviceset="DIODE7.5" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4245,8 +4245,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="U$8" gate="B" x="17.78" y="-30.48" rot="R180"/>
 <instance part="U$8" gate="C" x="17.78" y="-40.64" rot="R180"/>
 <instance part="U$8" gate="D" x="17.78" y="-50.8" rot="R180"/>
-<instance part="D1" gate="G$1" x="-20.32" y="5.08" rot="R90"/>
-<instance part="D2" gate="G$1" x="-20.32" y="-33.02" rot="R90"/>
 <instance part="LED1" gate="G$1" x="-78.74" y="38.1" rot="R270"/>
 <instance part="R1" gate="G$1" x="-66.04" y="38.1"/>
 <instance part="R2" gate="G$1" x="53.34" y="-10.16"/>
@@ -4259,6 +4257,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="U$9" gate="G1" x="-76.2" y="-38.1" rot="R90"/>
 <instance part="R9" gate="G$1" x="-12.7" y="7.62"/>
 <instance part="R10" gate="G$1" x="-12.7" y="-30.48"/>
+<instance part="D1" gate="G$1" x="-20.32" y="5.08" rot="R90"/>
+<instance part="D2" gate="G$1" x="-20.32" y="-33.02" rot="R90"/>
 </instances>
 <busses>
 <bus name="B$1">
@@ -4430,11 +4430,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="GND-D" class="0">
 <segment>
-<pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="-20.32" y1="-38.1" x2="-20.32" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="1" pin="2"/>
 <wire x1="-20.32" y1="-40.64" x2="-27.94" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="-20.32" y1="0" x2="-20.32" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="1" pin="2"/>
 <wire x1="-20.32" y1="-2.54" x2="-27.94" y2="-2.54" width="0.1524" layer="91"/>
@@ -4488,6 +4486,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-33.02" y1="-15.24" x2="-58.42" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="-15.24" x2="-58.42" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="-33.02" y="-15.24"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="D2" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="BDIR" class="0">
@@ -4681,22 +4681,22 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <pinref part="U$5" gate="1" pin="1"/>
 <wire x1="-20.32" y1="7.62" x2="-27.94" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="-20.32" y1="5.08" x2="-20.32" y2="7.62" width="0.1524" layer="91"/>
 <junction x="-20.32" y="7.62"/>
 <wire x1="-17.78" y1="7.62" x2="-20.32" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="11" class="0">
 <segment>
 <pinref part="U$6" gate="1" pin="1"/>
-<pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="-20.32" y1="-30.48" x2="-27.94" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="-33.02" x2="-20.32" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="-17.78" y1="-30.48" x2="-20.32" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="-20.32" y="-30.48"/>
+<pinref part="D2" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="D/B" class="0">
