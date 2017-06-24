@@ -247,6 +247,12 @@
 <text x="3.175" y="0.5334" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="3.2004" y="-1.8034" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="HOLE3.3">
+<hole x="0" y="0" drill="1.2"/>
+<circle x="0" y="0" radius="3.25" width="0.127" layer="21"/>
+<text x="0" y="-1.46" size="0.6096" layer="21">D3,3mm Drill</text>
+<text x="0" y="-4.21" size="0.6096" layer="21">M3 Bolt Outline</text>
+</package>
 </packages>
 </library>
 <library name="rcl">
@@ -1553,6 +1559,10 @@ May. 10, 2017&lt;br&gt;
 <element name="R10" library="rcl" package="R3216W" value="" x="41.5" y="36" rot="MR90"/>
 <element name="D1" library="diode" package="DIODE7.5" value="" x="31.5" y="38"/>
 <element name="D2" library="diode" package="DIODE7.5" value="" x="50" y="38"/>
+<element name="U$1" library="FP-21T for MITS" package="HOLE3.3" value="" x="3" y="67"/>
+<element name="U$2" library="FP-21T for MITS" package="HOLE3.3" value="" x="67" y="67"/>
+<element name="U$3" library="FP-21T for MITS" package="HOLE3.3" value="" x="3" y="3"/>
+<element name="U$10" library="FP-21T for MITS" package="HOLE3.3" value="" x="67" y="3"/>
 </elements>
 <signals>
 <signal name="8">
@@ -1726,18 +1736,17 @@ May. 10, 2017&lt;br&gt;
 <contactref element="POWERNPORT" pad="6"/>
 <contactref element="POWERNPORT" pad="7"/>
 <contactref element="POWERNPORT" pad="8"/>
-<wire x1="4" y1="57.27" x2="4" y2="68" width="1.6764" layer="16"/>
-<wire x1="4" y1="68" x2="67" y2="68" width="1.6764" layer="16"/>
-<wire x1="67" y1="68" x2="67" y2="26.89" width="1.6764" layer="16"/>
 <contactref element="U$5" pad="4"/>
 <contactref element="U$5" pad="7"/>
-<wire x1="53.8" y1="26.89" x2="67" y2="26.89" width="1.6764" layer="16"/>
+<wire x1="53.8" y1="26.89" x2="61" y2="26.89" width="1.6764" layer="16"/>
+<wire x1="61" y1="26.89" x2="67" y2="26.89" width="1.6764" layer="16"/>
 <wire x1="27.8" y1="8.9" x2="25" y2="8.9" width="1.6764" layer="16"/>
 <wire x1="25" y1="8.9" x2="25" y2="26.5" width="1.6764" layer="16"/>
 <wire x1="25" y1="26.5" x2="25" y2="26.89" width="1.6764" layer="16"/>
 <wire x1="25" y1="26.89" x2="35.5" y2="26.89" width="1.6764" layer="16"/>
 <wire x1="35.5" y1="26.89" x2="53.5" y2="26.89" width="1.6764" layer="16"/>
-<wire x1="53.5" y1="26.89" x2="67" y2="26.89" width="1.6764" layer="16"/>
+<wire x1="53.5" y1="26.89" x2="61" y2="26.89" width="1.6764" layer="16"/>
+<wire x1="61" y1="26.89" x2="67" y2="26.89" width="1.6764" layer="16"/>
 <wire x1="67" y1="26.89" x2="67" y2="24.35" width="1.6764" layer="16"/>
 <wire x1="67" y1="24.35" x2="67" y2="21.81" width="1.6764" layer="16"/>
 <wire x1="67" y1="21.81" x2="67" y2="19.27" width="1.6764" layer="16"/>
@@ -1759,6 +1768,11 @@ May. 10, 2017&lt;br&gt;
 <wire x1="53.8" y1="26.89" x2="53.5" y2="26.89" width="1.27" layer="16"/>
 <wire x1="35.5" y1="33.9" x2="35.5" y2="26.5" width="1.27" layer="16"/>
 <wire x1="35.5" y1="26.5" x2="35.3" y2="26.5" width="1.27" layer="16"/>
+<wire x1="9.5" y1="68" x2="9.5" y2="57.5" width="1.6764" layer="16"/>
+<wire x1="9.5" y1="57.5" x2="9.5" y2="57.27" width="1.6764" layer="16"/>
+<wire x1="9.5" y1="57.27" x2="4" y2="57.27" width="1.6764" layer="16"/>
+<wire x1="9.5" y1="68" x2="61" y2="68" width="1.6764" layer="16"/>
+<wire x1="61" y1="68" x2="61" y2="26.89" width="1.6764" layer="16"/>
 </signal>
 <signal name="BDIR">
 <contactref element="SIGNALPORT" pad="8"/>
