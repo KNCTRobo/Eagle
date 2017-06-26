@@ -1729,7 +1729,7 @@ May. 10, 2017&lt;br&gt;
 <wire x1="41.35" y1="67.31" x2="41.91" y2="67.31" width="1.016" layer="16"/>
 <wire x1="49.53" y1="58.42" x2="49.53" y2="67.31" width="1.016" layer="16"/>
 </signal>
-<signal name="N$1">
+<signal name="NLED1">
 <contactref element="R1" pad="2"/>
 <contactref element="LED1" pad="K"/>
 <wire x1="7.62" y1="57.15" x2="7.62" y2="53.569" width="1.016" layer="16"/>
@@ -1814,7 +1814,7 @@ May. 10, 2017&lt;br&gt;
 <wire x1="25.4" y1="11.43" x2="25.4" y2="17.78" width="2.54" layer="16"/>
 <wire x1="25.4" y1="17.78" x2="3" y2="17.78" width="2.54" layer="16"/>
 </signal>
-<signal name="N$5">
+<signal name="NBATT1">
 <contactref element="U$3" pad="1"/>
 <contactref element="D1" pad="C"/>
 <contactref element="D2" pad="A"/>

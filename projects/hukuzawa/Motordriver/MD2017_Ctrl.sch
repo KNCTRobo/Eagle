@@ -4544,7 +4544,7 @@ ultra fast rectifier, 3 A</description>
 <label x="20.574" y="-9.906" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="NLED1" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
@@ -4678,7 +4678,7 @@ ultra fast rectifier, 3 A</description>
 <label x="81.28" y="0" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="NBATT1" class="0">
 <segment>
 <wire x1="73.66" y1="17.78" x2="68.58" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="17.78" x2="66.04" y2="17.78" width="0.1524" layer="91"/>

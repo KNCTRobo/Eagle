@@ -4268,7 +4268,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </bus>
 </busses>
 <nets>
-<net name="8" class="0">
+<net name="NCSUPP1" class="0">
 <segment>
 <pinref part="U$7" gate="A" pin="A"/>
 <wire x1="25.4" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
@@ -4323,7 +4323,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="68.58" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="7" class="0">
+<net name="NSIG1" class="0">
 <segment>
 <wire x1="48.26" y1="-20.32" x2="35.56" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-20.32" x2="35.56" y2="-2.54" width="0.1524" layer="91"/>
@@ -4332,7 +4332,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="6" class="0">
+<net name="NSIG2" class="0">
 <segment>
 <wire x1="48.26" y1="-25.4" x2="33.02" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-25.4" x2="33.02" y2="-12.7" width="0.1524" layer="91"/>
@@ -4341,7 +4341,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="5" class="0">
+<net name="NSIG3" class="0">
 <segment>
 <wire x1="48.26" y1="-30.48" x2="30.48" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-30.48" x2="30.48" y2="-22.86" width="0.1524" layer="91"/>
@@ -4350,7 +4350,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="4" class="0">
+<net name="NSIG4" class="0">
 <segment>
 <wire x1="48.26" y1="-35.56" x2="27.94" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-35.56" x2="27.94" y2="-33.02" width="0.1524" layer="91"/>
@@ -4359,7 +4359,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="3" class="0">
+<net name="NSIG5" class="0">
 <segment>
 <wire x1="48.26" y1="-40.64" x2="27.94" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-40.64" x2="27.94" y2="-43.18" width="0.1524" layer="91"/>
@@ -4368,7 +4368,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="2" class="0">
+<net name="NSIG6" class="0">
 <segment>
 <wire x1="48.26" y1="-45.72" x2="27.94" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="-45.72" x2="27.94" y2="-53.34" width="0.1524" layer="91"/>
@@ -4425,8 +4425,8 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="91"/>
 <wire x1="0" y1="0" x2="0" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="0" y1="7.62" x2="-7.62" y2="7.62" width="0.1524" layer="91"/>
-<label x="-5.08" y="7.62" size="1.778" layer="95"/>
 <pinref part="R9" gate="G$1" pin="2"/>
+<label x="0" y="7.874" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="GND-D" class="0">
@@ -4678,7 +4678,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="53.34" y="48.26" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="NDSUPP1" class="0">
 <segment>
 <pinref part="U$5" gate="1" pin="1"/>
 <wire x1="-20.32" y1="7.62" x2="-27.94" y2="7.62" width="0.1524" layer="91"/>
@@ -4689,7 +4689,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="D1" gate="G$1" pin="C"/>
 </segment>
 </net>
-<net name="11" class="0">
+<net name="NDSUPP2" class="0">
 <segment>
 <pinref part="U$6" gate="1" pin="1"/>
 <wire x1="-20.32" y1="-30.48" x2="-27.94" y2="-30.48" width="0.1524" layer="91"/>
@@ -4704,6 +4704,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="-7.62" y1="-30.48" x2="2.54" y2="-30.48" width="0.1524" layer="91"/>
+<label x="0" y="-30.226" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
 <pinref part="U$7" gate="C" pin="EMIT"/>
