@@ -4169,20 +4169,20 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="SIGNALPORT" library="FH105" deviceset="8PIN" device=""/>
 <part name="POWERPPORT" library="FH105" deviceset="8PIN" device=""/>
 <part name="POWERNPORT" library="FH105" deviceset="8PIN" device=""/>
-<part name="U$4" library="BUK116-50L" deviceset="BUK116-50L" device=""/>
+<part name="FET1" library="BUK116-50L" deviceset="BUK116-50L" device=""/>
 <part name="U$5" library="relay" deviceset="RELAY(L)" device=""/>
 <part name="U$6" library="relay" deviceset="RELAY(L)" device=""/>
 <part name="U$7" library="photocoupler" deviceset="TLP521-4" device=""/>
 <part name="U$8" library="photocoupler" deviceset="TLP521-4" device=""/>
 <part name="LED1" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R3216W"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R3216W"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R3216W"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R3216W"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R3216W"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R3216W"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R3216W"/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R3216W" value="300"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R3216W" value="300"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R3216W" value="300"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R3216W" value="300"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R3216W" value="300"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R3216W" value="300"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R3216W" value="300"/>
 <part name="U$9" library="Powerio" deviceset="2P" device=""/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R3216W"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R3216W"/>
@@ -4230,7 +4230,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="POWERNPORT" gate="-8" x="86.36" y="5.08"/>
 <instance part="POWERNPORT" gate="-7" x="86.36" y="10.16"/>
 <instance part="POWERNPORT" gate="-1" x="86.36" y="40.64"/>
-<instance part="U$4" gate="G$1" x="-40.64" y="38.1"/>
+<instance part="FET1" gate="G$1" x="-40.64" y="38.1"/>
 <instance part="U$5" gate="R1" x="-58.42" y="-7.62" rot="R270"/>
 <instance part="U$5" gate="1" x="-27.94" y="2.54" rot="R180"/>
 <instance part="U$5" gate="R2" x="-58.42" y="12.7" rot="R270"/>
@@ -4377,7 +4377,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="PROTECTSP." class="0">
 <segment>
 <pinref part="U$8" gate="A" pin="EMIT"/>
 <wire x1="7.62" y1="12.7" x2="5.08" y2="12.7" width="0.1524" layer="91"/>
@@ -4386,17 +4386,18 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="5.08" y1="22.86" x2="7.62" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="22.86" x2="5.08" y2="22.86" width="0.1524" layer="91"/>
 <junction x="7.62" y="22.86"/>
-<pinref part="U$4" gate="G$1" pin="P"/>
+<pinref part="FET1" gate="G$1" pin="P"/>
 <wire x1="-27.94" y1="40.64" x2="-53.34" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="40.64" x2="5.08" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="40.64" x2="5.08" y2="22.86" width="0.1524" layer="91"/>
 <junction x="5.08" y="22.86"/>
+<label x="5.08" y="40.64" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="PWM" class="0">
 <segment>
 <wire x1="2.54" y1="2.54" x2="2.54" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="I"/>
+<pinref part="FET1" gate="G$1" pin="I"/>
 <wire x1="-30.48" y1="35.56" x2="-53.34" y2="35.56" width="0.1524" layer="91"/>
 <label x="-5.08" y="35.56" size="1.778" layer="95"/>
 <wire x1="-30.48" y1="35.56" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
@@ -4546,9 +4547,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="68.58" y="-10.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="PWMOUT" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="S"/>
+<pinref part="FET1" gate="G$1" pin="S"/>
 <wire x1="-38.1" y1="25.4" x2="-38.1" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="17.78" x2="-38.1" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-2.54" x2="-38.1" y2="7.62" width="0.1524" layer="91"/>
@@ -4560,7 +4561,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <junction x="-38.1" y="17.78"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="DIRP" class="0">
 <segment>
 <wire x1="-55.88" y1="-20.32" x2="-68.58" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="-68.58" y1="-20.32" x2="-68.58" y2="12.7" width="0.1524" layer="91"/>
@@ -4572,7 +4573,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-53.34" y1="-33.02" x2="-55.88" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="DIRN" class="0">
 <segment>
 <wire x1="-66.04" y1="-17.78" x2="-66.04" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="R1" pin="P"/>
@@ -4584,7 +4585,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-50.8" y1="-50.8" x2="-55.88" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="OUTN" class="0">
 <segment>
 <pinref part="U$9" gate="G1" pin="P1"/>
 <pinref part="U$6" gate="R1" pin="P"/>
@@ -4592,7 +4593,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-63.5" y1="-43.18" x2="-63.5" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="OUTP" class="0">
 <segment>
 <pinref part="U$9" gate="G1" pin="P2"/>
 <pinref part="U$6" gate="R2" pin="P"/>
@@ -4603,7 +4604,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="U$4" gate="G$1" pin="F"/>
+<pinref part="FET1" gate="G$1" pin="F"/>
 <wire x1="-60.96" y1="38.1" x2="-53.34" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -4616,7 +4617,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </net>
 <net name="VCC12V" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="D"/>
+<pinref part="FET1" gate="G$1" pin="D"/>
 <pinref part="POWERPPORT" gate="-1" pin="P$1"/>
 <wire x1="-38.1" y1="50.8" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="50.8" x2="55.88" y2="50.8" width="0.1524" layer="91"/>
@@ -4713,7 +4714,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="7.62" y1="-38.1" x2="2.54" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="BRAKES" class="0">
 <segment>
 <pinref part="U$6" gate="R2" pin="S"/>
 <wire x1="-55.88" y1="-22.86" x2="-58.42" y2="-22.86" width="0.1524" layer="91"/>

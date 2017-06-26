@@ -4357,11 +4357,11 @@ ultra fast rectifier, 3 A</description>
 <part name="POWERPPORT" library="FH105" deviceset="8PIN" device=""/>
 <part name="J1" library="3M_372xx" deviceset="3X2" device="A"/>
 <part name="LED1" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
-<part name="R1" library="rcl" deviceset="R-US_" device="R3216W"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="R3216W" value="1k"/>
 <part name="U$2" library="Powerio" deviceset="2P" device=""/>
 <part name="U$3" library="testLib" deviceset="F-115" device=""/>
-<part name="C1" library="FP-21T for MITS" deviceset="CPOL-EU2" device="-5MM"/>
-<part name="C2" library="FP-21T for MITS" deviceset="CPOL-EU2" device="-5MM"/>
+<part name="C1" library="FP-21T for MITS" deviceset="CPOL-EU2" device="-5MM" value="47uF"/>
+<part name="C2" library="FP-21T for MITS" deviceset="CPOL-EU2" device="-5MM" value="47uF"/>
 <part name="C3" library="FP-21T for MITS" deviceset="C0.1UF" device=""/>
 <part name="D1" library="diode" deviceset="Z-DIODE" device=""/>
 <part name="D2" library="diode" deviceset="Z-DIODE" device=""/>
@@ -4422,8 +4422,8 @@ ultra fast rectifier, 3 A</description>
 <busses>
 <bus name="B0">
 <segment>
-<wire x1="-66.04" y1="10.16" x2="-66.04" y2="20.32" width="0.762" layer="92"/>
-<wire x1="-66.04" y1="20.32" x2="-55.88" y2="20.32" width="0.762" layer="92"/>
+<wire x1="-71.12" y1="10.16" x2="-71.12" y2="20.32" width="0.762" layer="92"/>
+<wire x1="-71.12" y1="20.32" x2="-55.88" y2="20.32" width="0.762" layer="92"/>
 <wire x1="-55.88" y1="20.32" x2="-55.88" y2="-5.08" width="0.762" layer="92"/>
 <wire x1="-55.88" y1="-5.08" x2="-73.66" y2="-5.08" width="0.762" layer="92"/>
 <wire x1="-73.66" y1="-5.08" x2="-73.66" y2="-22.86" width="0.762" layer="92"/>
@@ -4447,11 +4447,11 @@ ultra fast rectifier, 3 A</description>
 <wire x1="-35.56" y1="2.54" x2="-30.48" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="5V" class="0">
+<net name="VDD5V" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="VDD"/>
 <wire x1="-35.56" y1="38.1" x2="-35.56" y2="33.02" width="0.1524" layer="91"/>
-<label x="-40.64" y="53.848" size="1.778" layer="95"/>
+<label x="-45.72" y="53.848" size="1.778" layer="95"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="-35.56" y1="33.02" x2="-35.56" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="33.02" x2="-35.56" y2="33.02" width="0.1524" layer="91"/>
@@ -4471,6 +4471,7 @@ ultra fast rectifier, 3 A</description>
 <wire x1="-53.34" y1="45.72" x2="-53.34" y2="53.34" width="0.1524" layer="91"/>
 <junction x="-53.34" y="53.34"/>
 <junction x="-35.56" y="33.02"/>
+<label x="15.24" y="15.494" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="9VIN" class="0">
@@ -4540,6 +4541,7 @@ ultra fast rectifier, 3 A</description>
 <wire x1="-58.42" y1="35.56" x2="-60.96" y2="35.56" width="0.1524" layer="91"/>
 <junction x="-58.42" y="35.56"/>
 <junction x="-60.96" y="35.56"/>
+<label x="20.574" y="-9.906" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -4563,10 +4565,12 @@ ultra fast rectifier, 3 A</description>
 <wire x1="17.78" y1="-5.08" x2="17.78" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="SIGNALPORT" gate="-3" pin="P$1"/>
 <wire x1="17.78" y1="-15.24" x2="22.86" y2="-15.24" width="0.1524" layer="91"/>
+<label x="18.034" y="-14.986" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="RB5"/>
-<wire x1="-66.04" y1="10.16" x2="-60.96" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="10.16" x2="-60.96" y2="10.16" width="0.1524" layer="91"/>
+<label x="-61.468" y="10.414" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="AD/B" class="0">
@@ -4575,10 +4579,12 @@ ultra fast rectifier, 3 A</description>
 <wire x1="15.24" y1="-7.62" x2="15.24" y2="-20.32" width="0.1524" layer="91"/>
 <pinref part="SIGNALPORT" gate="-4" pin="P$1"/>
 <wire x1="15.24" y1="-20.32" x2="22.86" y2="-20.32" width="0.1524" layer="91"/>
+<label x="15.494" y="-20.066" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="RB7"/>
-<wire x1="-66.04" y1="15.24" x2="-60.96" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="15.24" x2="-60.96" y2="15.24" width="0.1524" layer="91"/>
+<label x="-61.468" y="15.494" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="ADIR" class="0">
@@ -4587,10 +4593,12 @@ ultra fast rectifier, 3 A</description>
 <wire x1="12.7" y1="-10.16" x2="12.7" y2="-25.4" width="0.1524" layer="91"/>
 <pinref part="SIGNALPORT" gate="-5" pin="P$1"/>
 <wire x1="12.7" y1="-25.4" x2="22.86" y2="-25.4" width="0.1524" layer="91"/>
+<label x="12.954" y="-25.146" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="RB6"/>
-<wire x1="-66.04" y1="12.7" x2="-60.96" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="12.7" x2="-60.96" y2="12.7" width="0.1524" layer="91"/>
+<label x="-61.468" y="12.954" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="BPWM" class="0">
@@ -4599,10 +4607,12 @@ ultra fast rectifier, 3 A</description>
 <wire x1="10.16" y1="-12.7" x2="10.16" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="SIGNALPORT" gate="-6" pin="P$1"/>
 <wire x1="10.16" y1="-30.48" x2="22.86" y2="-30.48" width="0.1524" layer="91"/>
+<label x="10.414" y="-30.226" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="RA0"/>
 <wire x1="-73.66" y1="-17.78" x2="-60.96" y2="-17.78" width="0.1524" layer="91"/>
+<label x="-61.214" y="-17.526" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="BD/B" class="0">
@@ -4611,10 +4621,12 @@ ultra fast rectifier, 3 A</description>
 <wire x1="7.62" y1="-15.24" x2="7.62" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="SIGNALPORT" gate="-7" pin="P$1"/>
 <wire x1="7.62" y1="-35.56" x2="22.86" y2="-35.56" width="0.1524" layer="91"/>
+<label x="7.62" y="-35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="RA1"/>
 <wire x1="-60.96" y1="-15.24" x2="-73.66" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-61.214" y="-14.986" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="BDIR" class="0">
@@ -4623,13 +4635,15 @@ ultra fast rectifier, 3 A</description>
 <wire x1="5.08" y1="-17.78" x2="5.08" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="SIGNALPORT" gate="-8" pin="P$1"/>
 <wire x1="5.08" y1="-40.64" x2="22.86" y2="-40.64" width="0.1524" layer="91"/>
+<label x="5.08" y="-40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="RA2"/>
 <wire x1="-73.66" y1="-12.7" x2="-60.96" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-61.214" y="-12.446" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="GND2" class="0">
 <segment>
 <wire x1="78.74" y1="17.78" x2="81.28" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="17.78" x2="81.28" y2="7.62" width="0.1524" layer="91"/>
@@ -4661,6 +4675,7 @@ ultra fast rectifier, 3 A</description>
 <wire x1="78.74" y1="-50.8" x2="78.74" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="D1" gate="1" pin="A"/>
 <pinref part="D4" gate="1" pin="A"/>
+<label x="81.28" y="0" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -4674,7 +4689,7 @@ ultra fast rectifier, 3 A</description>
 <pinref part="D2" gate="1" pin="A"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="BATTB" class="0">
 <segment>
 <wire x1="73.66" y1="7.62" x2="68.58" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="7.62" x2="66.04" y2="7.62" width="0.1524" layer="91"/>
@@ -4689,7 +4704,7 @@ ultra fast rectifier, 3 A</description>
 <pinref part="D4" gate="1" pin="C"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="VCC12V" class="0">
 <segment>
 <pinref part="POWERPPORT" gate="-8" pin="P$1"/>
 <pinref part="POWERPPORT" gate="-1" pin="P$1"/>
@@ -4721,9 +4736,10 @@ ultra fast rectifier, 3 A</description>
 <junction x="60.96" y="-50.8"/>
 <pinref part="D2" gate="1" pin="C"/>
 <pinref part="D3" gate="1" pin="C"/>
+<label x="58.42" y="0" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="BATTA" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="P$2"/>
 <pinref part="U$2" gate="G1" pin="P2"/>
