@@ -4187,93 +4187,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="testLib">
-<description>テストで作成したライブラリ</description>
-<packages>
-<package name="F-115">
-<pad name="1" x="-19.6" y="0" drill="1.6" diameter="3.81"/>
-<pad name="2" x="0" y="0" drill="1.6" diameter="3.81"/>
-<wire x1="5" y1="6.3" x2="5" y2="5" width="0.127" layer="21"/>
-<wire x1="5" y1="5" x2="5" y2="3.7" width="0.127" layer="21"/>
-<wire x1="5" y1="3.7" x2="5" y2="2" width="0.127" layer="21"/>
-<wire x1="5" y1="2" x2="5" y2="-2" width="0.127" layer="21"/>
-<wire x1="5" y1="-2" x2="5" y2="-3.7" width="0.127" layer="21"/>
-<wire x1="5" y1="-3.7" x2="5" y2="-5" width="0.127" layer="21"/>
-<wire x1="5" y1="-5" x2="5" y2="-6.3" width="0.127" layer="21"/>
-<wire x1="5" y1="-6.3" x2="-20.5" y2="-6.3" width="0.127" layer="21"/>
-<wire x1="-20.5" y1="-6.3" x2="-20.5" y2="6.3" width="0.127" layer="21"/>
-<wire x1="-20.5" y1="6.3" x2="5" y2="6.3" width="0.127" layer="21"/>
-<wire x1="5" y1="3.7" x2="-10.3" y2="3.7" width="0.127" layer="21"/>
-<wire x1="-10.3" y1="3.7" x2="-10.3" y2="-3.7" width="0.127" layer="21"/>
-<wire x1="-10.3" y1="-3.7" x2="5" y2="-3.7" width="0.127" layer="21"/>
-<wire x1="-10.3" y1="-3.7" x2="-14.8" y2="-3.7" width="0.127" layer="21"/>
-<wire x1="-14.8" y1="-3.7" x2="-14.8" y2="3.7" width="0.127" layer="21"/>
-<wire x1="-14.8" y1="3.7" x2="-10.3" y2="3.7" width="0.127" layer="21"/>
-<wire x1="5" y1="5" x2="9" y2="5" width="0.127" layer="21"/>
-<wire x1="5" y1="-5" x2="9" y2="-5" width="0.127" layer="21"/>
-<wire x1="5" y1="2" x2="6" y2="2" width="0.127" layer="21"/>
-<wire x1="6" y1="2" x2="6.5" y2="2" width="0.127" layer="21"/>
-<wire x1="6.5" y1="2" x2="7" y2="2" width="0.127" layer="21"/>
-<wire x1="7" y1="2" x2="7.5" y2="2" width="0.127" layer="21"/>
-<wire x1="7.5" y1="2" x2="8" y2="2" width="0.127" layer="21"/>
-<wire x1="8" y1="2" x2="8.5" y2="2" width="0.127" layer="21"/>
-<wire x1="8.5" y1="2" x2="9" y2="2" width="0.127" layer="21"/>
-<wire x1="9" y1="2" x2="9.5" y2="2" width="0.127" layer="21"/>
-<wire x1="5" y1="-2" x2="6" y2="-2" width="0.127" layer="21"/>
-<wire x1="6" y1="-2" x2="6.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="6.5" y1="-2" x2="7" y2="-2" width="0.127" layer="21"/>
-<wire x1="7" y1="-2" x2="7.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="7.5" y1="-2" x2="8" y2="-2" width="0.127" layer="21"/>
-<wire x1="8" y1="-2" x2="8.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="8.5" y1="-2" x2="9" y2="-2" width="0.127" layer="21"/>
-<wire x1="9" y1="-2" x2="9.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="9.5" y1="5" x2="9.5" y2="-5" width="0.127" layer="21"/>
-<wire x1="9" y1="5" x2="9.5" y2="5" width="0.127" layer="21" curve="-180"/>
-<wire x1="9.5" y1="-5" x2="9" y2="-5" width="0.127" layer="21" curve="-180"/>
-<wire x1="6" y1="2" x2="6" y2="-2" width="0.127" layer="21"/>
-<wire x1="9" y1="2" x2="9" y2="-2" width="0.127" layer="21"/>
-<wire x1="8" y1="2" x2="8" y2="-2" width="0.127" layer="21"/>
-<wire x1="7" y1="2" x2="7" y2="-2" width="0.127" layer="21"/>
-<wire x1="6.5" y1="2" x2="6.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="7.5" y1="-2" x2="7.5" y2="2" width="0.127" layer="21"/>
-<wire x1="8.5" y1="-2" x2="8.5" y2="2" width="0.127" layer="21"/>
-<text x="-19" y="7" size="1.27" layer="25">&gt;NAME</text>
-<text x="-19" y="-8" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="FUSE">
-<wire x1="-5.08" y1="2.54" x2="-10.16" y2="0" width="0.254" layer="94" curve="53.130102"/>
-<wire x1="-5.08" y1="2.54" x2="0" y2="0" width="0.254" layer="94" curve="-53.130102"/>
-<wire x1="0" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94" curve="53.130102"/>
-<wire x1="5.08" y1="-2.54" x2="10.16" y2="0" width="0.254" layer="94" curve="53.130102"/>
-<circle x="-10.16" y="0" radius="0.508" width="0.254" layer="94"/>
-<circle x="10.16" y="0" radius="0.508" width="0.254" layer="94"/>
-<pin name="P$1" x="-12.7" y="0" length="short" direction="pas"/>
-<pin name="P$2" x="12.7" y="0" length="short" direction="pas" rot="R180"/>
-<text x="-10.16" y="-2.54" size="1.27" layer="96" rot="R180" align="top-right">&gt;VALUE</text>
-<text x="-10.16" y="3.048" size="1.27" layer="95">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="F-115">
-<gates>
-<gate name="G$1" symbol="FUSE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="F-115">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="diode">
 <packages>
 <package name="DO201-15">
@@ -4339,6 +4252,94 @@ ultra fast rectifier, 3 A</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="MF5xx">
+<packages>
+<package name="MF550C">
+<pad name="PA" x="-12.25" y="-0.05" drill="1.2" diameter="2.54"/>
+<pad name="PB" x="12.25" y="0" drill="1.2" diameter="2.54"/>
+<wire x1="-18.75" y1="-5.6" x2="-18.75" y2="5.6" width="0.127" layer="21"/>
+<wire x1="-18.75" y1="5.6" x2="-4" y2="5.6" width="0.127" layer="21"/>
+<wire x1="4" y1="5.6" x2="17.75" y2="5.6" width="0.127" layer="21"/>
+<wire x1="17.75" y1="5.6" x2="17.75" y2="-5.6" width="0.127" layer="21"/>
+<wire x1="17.75" y1="-5.6" x2="4" y2="-5.6" width="0.127" layer="21"/>
+<wire x1="-4" y1="-5.6" x2="-18.75" y2="-5.6" width="0.127" layer="21"/>
+<wire x1="4" y1="-5.6" x2="3.35" y2="-4.95" width="0.127" layer="21"/>
+<wire x1="3.35" y1="-4.95" x2="0" y2="-4.95" width="0.127" layer="21"/>
+<wire x1="0" y1="-4.95" x2="-3.35" y2="-4.95" width="0.127" layer="21"/>
+<wire x1="-3.35" y1="-4.95" x2="-4" y2="-5.6" width="0.127" layer="21"/>
+<wire x1="-4" y1="5.6" x2="-3.35" y2="4.95" width="0.127" layer="21"/>
+<wire x1="-3.35" y1="4.95" x2="0" y2="4.95" width="0.127" layer="21"/>
+<wire x1="0" y1="4.95" x2="3.35" y2="4.95" width="0.127" layer="21"/>
+<wire x1="3.35" y1="4.95" x2="4" y2="5.6" width="0.127" layer="21"/>
+<wire x1="-17.55" y1="-4.4" x2="-17.55" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="-17.55" y1="-0.75" x2="-17.55" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-17.55" y1="0.75" x2="-17.55" y2="4.4" width="0.127" layer="21"/>
+<wire x1="-17.55" y1="4.4" x2="-4" y2="4.4" width="0.127" layer="21"/>
+<wire x1="-4" y1="4.4" x2="-3.35" y2="3.75" width="0.127" layer="21"/>
+<wire x1="-3.35" y1="3.75" x2="0" y2="3.75" width="0.127" layer="21"/>
+<wire x1="0" y1="3.75" x2="3.35" y2="3.75" width="0.127" layer="21"/>
+<wire x1="3.35" y1="3.75" x2="4" y2="4.4" width="0.127" layer="21"/>
+<wire x1="4" y1="4.4" x2="16.55" y2="4.4" width="0.127" layer="21"/>
+<wire x1="16.55" y1="4.4" x2="16.55" y2="0.75" width="0.127" layer="21"/>
+<wire x1="16.55" y1="0.75" x2="16.55" y2="-0.75" width="0.127" layer="21"/>
+<wire x1="16.55" y1="-0.75" x2="16.55" y2="-4.4" width="0.127" layer="21"/>
+<wire x1="16.55" y1="-4.4" x2="4" y2="-4.4" width="0.127" layer="21"/>
+<wire x1="4" y1="-4.4" x2="3.35" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="3.35" y1="-3.75" x2="0" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.75" x2="-3.35" y2="-3.75" width="0.127" layer="21"/>
+<wire x1="-3.35" y1="-3.75" x2="-4" y2="-4.4" width="0.127" layer="21"/>
+<wire x1="-4" y1="-4.4" x2="-17.55" y2="-4.4" width="0.127" layer="21"/>
+<wire x1="-17.55" y1="0.75" x2="-17.55" y2="-0.75" width="0.127" layer="21" curve="-180"/>
+<wire x1="16.55" y1="-0.75" x2="16.55" y2="0.75" width="0.127" layer="21" curve="-180"/>
+<wire x1="-15" y1="3.2" x2="-15" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="-15" y1="-3.2" x2="-9" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="-9" y1="-3.2" x2="9" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="9" y1="-3.2" x2="15" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="15" y1="-3.2" x2="15" y2="3.2" width="0.127" layer="21"/>
+<wire x1="15" y1="3.2" x2="9" y2="3.2" width="0.127" layer="21"/>
+<wire x1="9" y1="3.2" x2="-9" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-9" y1="3.2" x2="-15" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-9" y1="3.2" x2="-9" y2="3" width="0.127" layer="21"/>
+<wire x1="-9" y1="3" x2="-9" y2="0" width="0.127" layer="21"/>
+<wire x1="-9" y1="0" x2="-9" y2="-3" width="0.127" layer="21"/>
+<wire x1="-9" y1="-3" x2="-9" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="9" y1="3.2" x2="9" y2="0" width="0.127" layer="21"/>
+<wire x1="9" y1="0" x2="9" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="9" y2="0" width="0.127" layer="21" curve="-36.869898"/>
+<wire x1="0" y1="0" x2="-9" y2="0" width="0.127" layer="21" curve="-36.869906"/>
+<text x="-8" y="1.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-8" y="-2.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="FUSES">
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94" curve="-90"/>
+<pin name="PA" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="PB" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-5.08" y="1.27" size="1.27" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MF-5">
+<gates>
+<gate name="FUSE" symbol="FUSES" x="0" y="0"/>
+</gates>
+<devices>
+<device name="50C" package="MF550C">
+<connects>
+<connect gate="FUSE" pin="PA" pad="PA"/>
+<connect gate="FUSE" pin="PB" pad="PB"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4359,7 +4360,6 @@ ultra fast rectifier, 3 A</description>
 <part name="LED1" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R3216W" value="1k"/>
 <part name="U$2" library="Powerio" deviceset="2P" device=""/>
-<part name="U$3" library="testLib" deviceset="F-115" device=""/>
 <part name="C1" library="FP-21T for MITS" deviceset="CPOL-EU2" device="-5MM" value="47uF"/>
 <part name="C2" library="FP-21T for MITS" deviceset="CPOL-EU2" device="-5MM" value="47uF"/>
 <part name="C3" library="FP-21T for MITS" deviceset="C0.1UF" device=""/>
@@ -4367,6 +4367,7 @@ ultra fast rectifier, 3 A</description>
 <part name="D2" library="diode" deviceset="Z-DIODE" device=""/>
 <part name="D3" library="diode" deviceset="Z-DIODE" device=""/>
 <part name="D4" library="diode" deviceset="Z-DIODE" device=""/>
+<part name="FUSE" library="MF5xx" deviceset="MF-5" device="50C"/>
 </parts>
 <sheets>
 <sheet>
@@ -4410,7 +4411,6 @@ ultra fast rectifier, 3 A</description>
 <instance part="LED1" gate="G$1" x="-40.64" y="33.02" rot="R270"/>
 <instance part="R1" gate="G$1" x="-50.8" y="27.94" rot="R90"/>
 <instance part="U$2" gate="G1" x="63.5" y="53.34"/>
-<instance part="U$3" gate="G$1" x="68.58" y="33.02" rot="R90"/>
 <instance part="C1" gate="G$1" x="-63.5" y="43.18"/>
 <instance part="C2" gate="G$1" x="-58.42" y="43.18"/>
 <instance part="C3" gate="G$1" x="-53.34" y="40.64"/>
@@ -4418,6 +4418,7 @@ ultra fast rectifier, 3 A</description>
 <instance part="D2" gate="1" x="63.5" y="17.78" rot="R180"/>
 <instance part="D3" gate="1" x="63.5" y="7.62" rot="R180"/>
 <instance part="D4" gate="1" x="76.2" y="7.62" rot="R180"/>
+<instance part="FUSE" gate="FUSE" x="68.58" y="40.64" rot="R90"/>
 </instances>
 <busses>
 <bus name="B0">
@@ -4678,17 +4679,6 @@ ultra fast rectifier, 3 A</description>
 <label x="81.28" y="0" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="NBATT1" class="0">
-<segment>
-<wire x1="73.66" y1="17.78" x2="68.58" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="17.78" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="17.78" x2="68.58" y2="20.32" width="0.1524" layer="91"/>
-<junction x="68.58" y="17.78"/>
-<pinref part="U$3" gate="G$1" pin="P$1"/>
-<pinref part="D1" gate="1" pin="C"/>
-<pinref part="D2" gate="1" pin="A"/>
-</segment>
-</net>
 <net name="BATTB" class="0">
 <segment>
 <wire x1="73.66" y1="7.62" x2="68.58" y2="7.62" width="0.1524" layer="91"/>
@@ -4741,9 +4731,20 @@ ultra fast rectifier, 3 A</description>
 </net>
 <net name="BATTA" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P$2"/>
 <pinref part="U$2" gate="G1" pin="P2"/>
 <wire x1="68.58" y1="45.72" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="FUSE" gate="FUSE" pin="PB"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="D1" gate="1" pin="C"/>
+<wire x1="73.66" y1="17.78" x2="68.58" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="17.78" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="D2" gate="1" pin="A"/>
+<pinref part="FUSE" gate="FUSE" pin="PA"/>
+<wire x1="68.58" y1="35.56" x2="68.58" y2="17.78" width="0.1524" layer="91"/>
+<junction x="68.58" y="17.78"/>
 </segment>
 </net>
 </nets>
