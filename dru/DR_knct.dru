@@ -1,5 +1,5 @@
-description[en] = \n\n<b>EAGLE Design Rules for p-ban.com</b><br>\n<br>\nAug. 09, 2004<br>\nChiaki Nakajima<br>\nhttp://www.chiaki.cc<br>\nchi@chiaki.cc<br>\n
-description[ja] = \n\n<b>EAGLE Design Rules for K.N.C.T.</b><br>\n<br>\nMay. 10, 2017<br>\n
+description[en] = \n\n\n<b>EAGLE Design Rules for p-ban.com</b><br>\n<br>\nAug. 09, 2004<br>\nChiaki Nakajima<br>\nhttp://www.chiaki.cc<br>\nchi@chiaki.cc<br>\n
+description[ja] = \n\n\n<b>EAGLE Design Rules for K.N.C.T.</b><br>\n<br>May. 10, 2017<br>\n<br>Modified: Jul 07, 2017<BR>\n
 layerSetup = (1*16)
 mtCopper = 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm
 mtIsolate = 1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm
@@ -14,7 +14,7 @@ mdSmdVia = 0.2mm
 mdSmdSmd = 0.2mm
 mdViaViaSameLayer = 8mil
 mnLayersViaInSmd = 2
-mdCopperDimension = 0.7mm
+mdCopperDimension = 100mil
 mdDrill = 0.45mm
 mdSmdStop = 0mil
 msWidth = 0.15mm
