@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="2" display="yes" altdistance="25" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="25" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -318,12 +318,6 @@
 <pad name="P$3" x="2.54" y="0" drill="0.8" diameter="1.778"/>
 <text x="-4.064" y="1.524" size="0.6096" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="-4.064" y="-2.286" size="0.6096" layer="27" font="vector" ratio="15">&gt;VALUE</text>
-</package>
-<package name="HOLE3.3">
-<hole x="0" y="0" drill="1.2"/>
-<circle x="0" y="0" radius="3.25" width="0.127" layer="21"/>
-<text x="0" y="-1.46" size="0.6096" layer="21">D3,3mm Drill</text>
-<text x="0" y="-4.21" size="0.6096" layer="21">M3 Bolt Outline</text>
 </package>
 </packages>
 </library>
@@ -1439,6 +1433,17 @@ package type P</description>
 </package>
 </packages>
 </library>
+<library name="Hole">
+<packages>
+<package name="HOLE3.3">
+<hole x="0" y="0" drill="1.2"/>
+<circle x="0" y="0" radius="3.25" width="0.127" layer="21"/>
+<text x="0" y="-1.46" size="0.6096" layer="21">D3,3mm Drill</text>
+<text x="0" y="-4.21" size="0.6096" layer="21">M3 Bolt Outline</text>
+<circle x="0" y="0" radius="4" width="0.6096" layer="16"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1708,11 +1713,11 @@ May. 10, 2017&lt;br&gt;
 <attribute name="NAME" x="41.585" y="4.35" size="0.8128" layer="25" rot="R90"/>
 <attribute name="VALUE" x="47.045" y="4.35" size="0.8128" layer="27" rot="R90"/>
 </element>
-<element name="HOLE4" library="FP-21T for MITS" package="HOLE3.3" value="HOLE3.3M3BOLT" x="76" y="3"/>
-<element name="HOLE3" library="FP-21T for MITS" package="HOLE3.3" value="HOLE3.3M3BOLT" x="76" y="55"/>
-<element name="HOLE2" library="FP-21T for MITS" package="HOLE3.3" value="HOLE3.3M3BOLT" x="3" y="55"/>
-<element name="HOLE1" library="FP-21T for MITS" package="HOLE3.3" value="HOLE3.3M3BOLT" x="3" y="3"/>
 <element name="IC1" library="PIC" package="DIL28" value="PIC16F886" x="36.83" y="29.21"/>
+<element name="HOLE4" library="Hole" package="HOLE3.3" value="HOLE3.3M3BOLT" x="75" y="4"/>
+<element name="HOLE3" library="Hole" package="HOLE3.3" value="HOLE3.3M3BOLT" x="75" y="54"/>
+<element name="HOLE2" library="Hole" package="HOLE3.3" value="HOLE3.3M3BOLT" x="4" y="54"/>
+<element name="HOLE1" library="Hole" package="HOLE3.3" value="HOLE3.3M3BOLT" x="4" y="4"/>
 </elements>
 <signals>
 <signal name="9VLINE">

@@ -562,12 +562,6 @@ grid 7.62 mm, diameter 16 mm</description>
 <text x="-4.064" y="1.524" size="0.6096" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="-4.064" y="-2.286" size="0.6096" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 </package>
-<package name="HOLE3.3">
-<hole x="0" y="0" drill="1.2"/>
-<circle x="0" y="0" radius="3.25" width="0.127" layer="21"/>
-<text x="0" y="-1.46" size="0.6096" layer="21">D3,3mm Drill</text>
-<text x="0" y="-4.21" size="0.6096" layer="21">M3 Bolt Outline</text>
-</package>
 </packages>
 <symbols>
 <symbol name="CPOL-EU2">
@@ -652,15 +646,6 @@ grid 7.62 mm, diameter 16 mm</description>
 <pin name="P$1" x="-2.54" y="5.08" visible="off" length="point" direction="pas" rot="R270"/>
 <pin name="P$2" x="0" y="-5.08" visible="off" length="point" direction="pas" rot="R90"/>
 <pin name="P$3" x="2.54" y="5.08" visible="off" length="point" direction="pas" rot="R270"/>
-</symbol>
-<symbol name="HOLE3.3">
-<wire x1="0" y1="1.27" x2="1.27" y2="0" width="1.524" layer="94" curve="-90" cap="flat"/>
-<wire x1="-1.27" y1="0" x2="0" y2="-1.27" width="1.524" layer="94" curve="90" cap="flat"/>
-<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.0508" layer="94"/>
-<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.0508" layer="94"/>
-<circle x="0" y="0" radius="2.032" width="0.0508" layer="94"/>
-<circle x="0" y="0" radius="0.508" width="0.0508" layer="94"/>
-<text x="2.032" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -823,18 +808,6 @@ CERAMIC RESONATOR</description>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 <connect gate="G$1" pin="P$3" pad="P$3"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="HOLE3.3" prefix="H">
-<gates>
-<gate name="G$1" symbol="HOLE3.3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="M3BOLT" package="HOLE3.3">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4432,6 +4405,42 @@ package type P</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Hole">
+<packages>
+<package name="HOLE3.3">
+<hole x="0" y="0" drill="1.2"/>
+<circle x="0" y="0" radius="3.25" width="0.127" layer="21"/>
+<text x="0" y="-1.46" size="0.6096" layer="21">D3,3mm Drill</text>
+<text x="0" y="-4.21" size="0.6096" layer="21">M3 Bolt Outline</text>
+<circle x="0" y="0" radius="4" width="0.6096" layer="16"/>
+</package>
+</packages>
+<symbols>
+<symbol name="HOLE3.3">
+<wire x1="0" y1="1.27" x2="1.27" y2="0" width="1.524" layer="94" curve="-90" cap="flat"/>
+<wire x1="-1.27" y1="0" x2="0" y2="-1.27" width="1.524" layer="94" curve="90" cap="flat"/>
+<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.0508" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.0508" layer="94"/>
+<circle x="0" y="0" radius="2.032" width="0.0508" layer="94"/>
+<circle x="0" y="0" radius="0.508" width="0.0508" layer="94"/>
+<text x="2.032" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="HOLE3.3" prefix="H">
+<gates>
+<gate name="G$1" symbol="HOLE3.3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="M3BOLT" package="HOLE3.3">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4479,11 +4488,11 @@ package type P</description>
 <part name="MULTISUPPA" library="3M_372xx" deviceset="3X1" device="A"/>
 <part name="P+7" library="supply1" deviceset="V+" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="HOLE4" library="FP-21T for MITS" deviceset="HOLE3.3" device="M3BOLT"/>
-<part name="HOLE3" library="FP-21T for MITS" deviceset="HOLE3.3" device="M3BOLT"/>
-<part name="HOLE2" library="FP-21T for MITS" deviceset="HOLE3.3" device="M3BOLT"/>
-<part name="HOLE1" library="FP-21T for MITS" deviceset="HOLE3.3" device="M3BOLT"/>
 <part name="IC1" library="PIC" deviceset="PIC16F886" device=""/>
+<part name="HOLE4" library="Hole" deviceset="HOLE3.3" device="M3BOLT"/>
+<part name="HOLE3" library="Hole" deviceset="HOLE3.3" device="M3BOLT"/>
+<part name="HOLE2" library="Hole" deviceset="HOLE3.3" device="M3BOLT"/>
+<part name="HOLE1" library="Hole" deviceset="HOLE3.3" device="M3BOLT"/>
 </parts>
 <sheets>
 <sheet>
@@ -4595,11 +4604,11 @@ package type P</description>
 <instance part="MULTISUPPA" gate="-3" x="99.06" y="78.74" rot="R90"/>
 <instance part="P+7" gate="1" x="88.9" y="106.68"/>
 <instance part="GND8" gate="1" x="99.06" y="66.04"/>
+<instance part="IC1" gate="IC" x="-25.4" y="17.78"/>
 <instance part="HOLE4" gate="G$1" x="-195.58" y="-119.38"/>
 <instance part="HOLE3" gate="G$1" x="-195.58" y="-114.3"/>
 <instance part="HOLE2" gate="G$1" x="-195.58" y="-109.22"/>
 <instance part="HOLE1" gate="G$1" x="-195.58" y="-104.14"/>
-<instance part="IC1" gate="IC" x="-25.4" y="17.78"/>
 </instances>
 <busses>
 </busses>
