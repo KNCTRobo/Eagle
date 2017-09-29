@@ -340,8 +340,8 @@ UsedLibrary="C:/Users/robo/Documents/eagle/lbr/iwaki/BP341L_1.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="0 0 680 695"
-State=2
+Loc="104 104 703 503"
+State=1
 Number=0
 
 [Desktop]

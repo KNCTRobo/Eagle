@@ -4720,7 +4720,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="R9" library="rcl" deviceset="R-EU_" device="R3216W" value="10k"/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R3216W" value="10k"/>
 <part name="R11" library="rcl" deviceset="R-EU_" device="R3216W" value="10k"/>
-<part name="R13" library="rcl" deviceset="R-EU_" device="R3216W" value="510"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R3216W" value="1k"/>
 <part name="TR1" library="My_transistor" deviceset="2SC2001" device=""/>
 <part name="TR2" library="My_transistor" deviceset="2SC2001" device=""/>
 <part name="TR3" library="My_transistor" deviceset="2SC2001" device=""/>
@@ -4742,19 +4742,19 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="NJM2" library="regulator" deviceset="3TARMINALREGULATOR" device="7800"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R3216W" value="2k"/>
 <part name="IC1" library="FP-21T for MITS" deviceset="PIC16F648" device=""/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R3216W" value="10k"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R3216W" value="10k"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R3216W" value="10k"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R3216W" value="10k"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R3216W" value="10k"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R3216W" value="10k"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R3216W" value="330"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R3216W" value="330"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R3216W" value="330"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R3216W" value="330"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R3216W" value="330"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R3216W" value="330"/>
 <part name="IC2" library="FP-21T for MITS" deviceset="TLP521" device=""/>
 <part name="IC3" library="FP-21T for MITS" deviceset="TLP521" device=""/>
 <part name="XT1" library="ceralock" deviceset="CERALOCK" device=""/>
 <part name="U$1" library="My_rcl" deviceset="C-ELEC" device=""/>
 <part name="U$3" library="My_rcl" deviceset="C-ELEC" device=""/>
 <part name="C1" library="My_rcl" deviceset="C-" device=""/>
-<part name="R14" library="rcl" deviceset="R-EU_" device="R3216W" value="510"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R3216W" value="1k"/>
 <part name="U$5" library="FET_kai" deviceset="N-MOS" device=""/>
 <part name="U$10" library="FET_kai" deviceset="N-MOS" device=""/>
 <part name="U$11" library="FET_kai" deviceset="N-MOS" device=""/>

@@ -1704,7 +1704,7 @@ chi@chiaki.cc&lt;br&gt;
 <element name="R9" library="rcl" package="R3216W" value="10k" x="54.61" y="52.07" rot="MR180"/>
 <element name="R10" library="rcl" package="R3216W" value="10k" x="54.61" y="36.83" rot="MR180"/>
 <element name="R11" library="rcl" package="R3216W" value="10k" x="54.61" y="22.86" rot="MR180"/>
-<element name="R13" library="rcl" package="R3216W" value="510" x="54.61" y="45.72" rot="MR0"/>
+<element name="R13" library="rcl" package="R3216W" value="1k" x="54.61" y="45.72" rot="MR0"/>
 <element name="TR1" library="My_transistor" package="TO92BCE" value="2SC2001" x="60.96" y="24.13" rot="R270"/>
 <element name="TR2" library="My_transistor" package="TO92BCE" value="2SC2001" x="60.96" y="38.1" rot="R270"/>
 <element name="TR3" library="My_transistor" package="TO92BCE" value="2SC2001" x="60.96" y="53.34" rot="R270"/>
@@ -1726,19 +1726,19 @@ chi@chiaki.cc&lt;br&gt;
 <element name="NJM2" library="regulator" package="TO-220" value="3TARMINALREGULATOR7800" x="12.7" y="68.58"/>
 <element name="R1" library="rcl" package="R3216W" value="2k" x="10.16" y="27.94" rot="MR270"/>
 <element name="IC1" library="FP-21T for MITS" package="DIL18" value="PIC16F648" x="19.05" y="17.78" rot="R270"/>
-<element name="R2" library="rcl" package="R3216W" value="10k" x="35.56" y="58.42" rot="MR180"/>
-<element name="R3" library="rcl" package="R3216W" value="10k" x="35.56" y="63.5" rot="MR180"/>
-<element name="R4" library="rcl" package="R3216W" value="10k" x="35.56" y="68.58" rot="MR180"/>
-<element name="R5" library="rcl" package="R3216W" value="10k" x="35.56" y="16.51" rot="MR180"/>
-<element name="R6" library="rcl" package="R3216W" value="10k" x="35.56" y="21.59" rot="MR180"/>
-<element name="R7" library="rcl" package="R3216W" value="10k" x="35.56" y="26.67" rot="MR180"/>
+<element name="R2" library="rcl" package="R3216W" value="330" x="35.56" y="58.42" rot="MR180"/>
+<element name="R3" library="rcl" package="R3216W" value="330" x="35.56" y="63.5" rot="MR180"/>
+<element name="R4" library="rcl" package="R3216W" value="330" x="35.56" y="68.58" rot="MR180"/>
+<element name="R5" library="rcl" package="R3216W" value="330" x="35.56" y="16.51" rot="MR180"/>
+<element name="R6" library="rcl" package="R3216W" value="330" x="35.56" y="21.59" rot="MR180"/>
+<element name="R7" library="rcl" package="R3216W" value="330" x="35.56" y="26.67" rot="MR180"/>
 <element name="IC2" library="FP-21T for MITS" package="DIL16" value="TLP521" x="43.18" y="59.69" rot="R270"/>
 <element name="IC3" library="FP-21T for MITS" package="DIL16" value="TLP521" x="43.18" y="17.78" rot="R270"/>
 <element name="XT1" library="ceralock" package="CERALOCK" value="CERALOCK" x="22.86" y="22.86" rot="R90"/>
 <element name="U$1" library="My_rcl" package="C-6MM" value="C-ELEC" x="8.89" y="62.23"/>
 <element name="U$3" library="My_rcl" package="C-6MM" value="C-ELEC" x="16.51" y="62.23" rot="R180"/>
 <element name="C1" library="My_rcl" package="C-2.54" value="" x="16.51" y="57.15"/>
-<element name="R14" library="rcl" package="R3216W" value="510" x="55.88" y="12.7" rot="MR90"/>
+<element name="R14" library="rcl" package="R3216W" value="1k" x="55.88" y="12.7" rot="MR90"/>
 <element name="U$5" library="FET_kai" package="TO220BV" value="N-MOS" x="63.5" y="12.7" rot="R270"/>
 <element name="U$10" library="FET_kai" package="TO220BV" value="N-MOS" x="69.85" y="12.7" rot="R270"/>
 <element name="U$11" library="FET_kai" package="TO220BV" value="N-MOS" x="76.2" y="12.7" rot="R270"/>
