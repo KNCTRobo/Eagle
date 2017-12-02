@@ -8,11 +8,15 @@ Desktop="Desktop"
 [Globals]
 AutoSaveProject=1
 UsedLibrary="C:/Users/robo/Documents/eagle/lbr/rcl.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/NITKCRobo_lib/3M_372xx.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/my_lib/FP-21T for MITS.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/my_lib/supply1.lbr"
+UsedLibrary="Hole.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="26 26 625 425"
-State=1
+Loc="172 95 771 593"
+State=2
 Number=0
 
 [Desktop]
