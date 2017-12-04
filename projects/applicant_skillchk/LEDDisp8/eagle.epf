@@ -1,2 +1,24 @@
 [Eagle]
 Version="06 02 00"
+Platform="Windows"
+Serial="6E30A60700-LSR-WLM-3CS"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/rcl.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/NITKCRobo_lib/3M_372xx.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/my_lib/FP-21T for MITS.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/my_lib/supply1.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/projects/applicant_skillchk/ESTester/Hole.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="-8 -8 591 490"
+State=1
+Number=0
+
+[Desktop]
+Screen="1366 768"
+Window="Win_1"
