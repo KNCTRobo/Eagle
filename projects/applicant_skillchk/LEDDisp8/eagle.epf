@@ -11,12 +11,12 @@ UsedLibrary="C:/Users/robo/Documents/eagle/lbr/rcl.lbr"
 UsedLibrary="C:/Users/robo/Documents/eagle/lbr/NITKCRobo_lib/3M_372xx.lbr"
 UsedLibrary="C:/Users/robo/Documents/eagle/lbr/my_lib/FP-21T for MITS.lbr"
 UsedLibrary="C:/Users/robo/Documents/eagle/lbr/my_lib/supply1.lbr"
-UsedLibrary="C:/Users/robo/Documents/eagle/projects/applicant_skillchk/ESTester/Hole.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/NITKCRobo_lib/Hole.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="-8 -8 591 490"
-State=1
+Loc="423 147 1022 645"
+State=2
 Number=0
 
 [Desktop]
