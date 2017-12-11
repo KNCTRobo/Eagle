@@ -1,2 +1,23 @@
 [Eagle]
 Version="06 02 00"
+Platform="Windows"
+Serial="6E30A60700-LSR-WLM-3CS"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/NITKCRobo_lib/PIC.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/NITKCRobo_lib/switch.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/NITKCRobo_lib/FP-21T for MITS.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/NITKCRobo_lib/rcl.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="52 52 651 451"
+State=1
+Number=0
+
+[Desktop]
+Screen="1366 768"
+Window="Win_1"
