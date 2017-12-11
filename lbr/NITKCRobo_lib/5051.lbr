@@ -69,6 +69,9 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>Molex ボードマウントソケット&lt;br&gt;
+&lt;br&gt;
+対応パーツ: 5051-xx</description>
 <packages>
 <package name="5046-02">
 <wire x1="2.25" y1="0" x2="2.25" y2="2" width="0.254" layer="21"/>
