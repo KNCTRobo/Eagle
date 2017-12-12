@@ -11,10 +11,11 @@ UsedLibrary="C:/Users/robo/Documents/eagle/lbr/NITKCRobo_lib/PIC.lbr"
 UsedLibrary="C:/Users/robo/Documents/eagle/lbr/NITKCRobo_lib/switch.lbr"
 UsedLibrary="C:/Users/robo/Documents/eagle/lbr/NITKCRobo_lib/FP-21T for MITS.lbr"
 UsedLibrary="C:/Users/robo/Documents/eagle/lbr/NITKCRobo_lib/rcl.lbr"
+UsedLibrary="C:/Users/robo/Documents/eagle/lbr/NITKCRobo_lib/supply1.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="52 52 651 451"
+Loc="92 137 691 533"
 State=1
 Number=0
 
