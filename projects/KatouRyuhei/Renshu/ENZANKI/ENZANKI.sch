@@ -4027,12 +4027,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="VDD10" library="supply1" deviceset="VDD" device=""/>
 <part name="R11" library="rcl" deviceset="R-EU_" device="R3216W"/>
 <part name="LED5" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
-<part name="S5" library="switch" deviceset="SLIDESW" device=""/>
-<part name="RC" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="S6" library="switch" deviceset="SLIDESW" device=""/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R3216W"/>
 <part name="VDD11" library="supply1" deviceset="VDD" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="S6" library="switch" deviceset="SLIDESW" device=""/>
+<part name="S5" library="switch" deviceset="SLIDESW" device=""/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R3216W"/>
 <part name="VDD12" library="supply1" deviceset="VDD" device=""/>
 </parts>
@@ -4096,12 +4096,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="VDD10" gate="G$1" x="12.7" y="2.54" rot="R90"/>
 <instance part="R11" gate="G$1" x="22.86" y="2.54"/>
 <instance part="LED5" gate="G$1" x="33.02" y="2.54" rot="R90"/>
-<instance part="S5" gate="1" x="66.04" y="-30.48"/>
-<instance part="RC" gate="G$1" x="68.58" y="-17.78" rot="R90"/>
+<instance part="S6" gate="1" x="66.04" y="-30.48"/>
+<instance part="R6" gate="G$1" x="68.58" y="-17.78" rot="R90"/>
 <instance part="VDD11" gate="G$1" x="68.58" y="-7.62"/>
 <instance part="GND6" gate="1" x="66.04" y="-40.64"/>
 <instance part="GND7" gate="1" x="50.8" y="-40.64"/>
-<instance part="S6" gate="1" x="50.8" y="-30.48"/>
+<instance part="S5" gate="1" x="50.8" y="-30.48"/>
 <instance part="R5" gate="G$1" x="53.34" y="-17.78" rot="R90"/>
 <instance part="VDD12" gate="G$1" x="53.34" y="-7.62"/>
 </instances>
@@ -4161,7 +4161,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </segment>
 <segment>
 <pinref part="VDD11" gate="G$1" pin="VDD"/>
-<pinref part="RC" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="-10.16" x2="68.58" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -4197,12 +4197,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-10.16" y1="-35.56" x2="-10.16" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="S5" gate="1" pin="2"/>
+<pinref part="S6" gate="1" pin="2"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="66.04" y1="-35.56" x2="66.04" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="S6" gate="1" pin="2"/>
+<pinref part="S5" gate="1" pin="2"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="50.8" y1="-35.56" x2="50.8" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
@@ -4377,28 +4377,28 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <label x="40.64" y="2.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="S5" gate="1" pin="1"/>
+<pinref part="S6" gate="1" pin="1"/>
 <wire x1="63.5" y1="-25.4" x2="63.5" y2="-22.86" width="0.1524" layer="91"/>
 <label x="63.5" y="-22.86" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="RC" gate="G$1" pin="1"/>
-<pinref part="S5" gate="1" pin="3"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="S6" gate="1" pin="3"/>
 <wire x1="68.58" y1="-22.86" x2="68.58" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="S6" gate="1" pin="3"/>
+<pinref part="S5" gate="1" pin="3"/>
 <wire x1="53.34" y1="-22.86" x2="53.34" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IN5" class="0">
 <segment>
-<pinref part="S6" gate="1" pin="1"/>
+<pinref part="S5" gate="1" pin="1"/>
 <wire x1="48.26" y1="-25.4" x2="48.26" y2="-20.32" width="0.1524" layer="91"/>
 <label x="48.26" y="-20.32" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
