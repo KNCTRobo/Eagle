@@ -3655,6 +3655,169 @@ Source: www.luxeon.com&lt;p&gt;</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="PIC">
+<packages>
+<package name="DIL28">
+<description>&lt;B&gt;Dual In Line&lt;/B&gt;&lt;p&gt;
+package type P</description>
+<wire x1="-17.78" y1="-1.27" x2="-17.78" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-17.78" y1="1.27" x2="-17.78" y2="-1.27" width="0.1524" layer="21" curve="-180"/>
+<wire x1="17.78" y1="-2.54" x2="17.78" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-17.78" y1="2.54" x2="-17.78" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-17.78" y1="2.54" x2="17.78" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-17.653" y1="-2.54" x2="17.78" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="-16.51" y="-3.81" drill="1" diameter="1.9304" shape="square" rot="R90"/>
+<pad name="2" x="-13.97" y="-3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="3" x="-11.43" y="-3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="4" x="-8.89" y="-3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="5" x="-6.35" y="-3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="6" x="-3.81" y="-3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="7" x="-1.27" y="-3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="8" x="1.27" y="-3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="9" x="3.81" y="-3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="10" x="6.35" y="-3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="11" x="8.89" y="-3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="12" x="11.43" y="-3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="13" x="13.97" y="-3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="14" x="16.51" y="-3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="15" x="16.51" y="3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="16" x="13.97" y="3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="17" x="11.43" y="3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="18" x="8.89" y="3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="19" x="6.35" y="3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="20" x="3.81" y="3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="21" x="1.27" y="3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="22" x="-1.27" y="3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="23" x="-3.81" y="3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="24" x="-6.35" y="3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="25" x="-8.89" y="3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="26" x="-11.43" y="3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="27" x="-13.97" y="3.81" drill="1" diameter="1.9304" rot="R90"/>
+<pad name="28" x="-16.51" y="3.81" drill="1" diameter="1.9304" rot="R90"/>
+<text x="-15.24" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-15.24" y="-1.905" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PIC16F886">
+<pin name="!MCLR" x="-25.4" y="20.32" visible="pin" length="short" direction="pas"/>
+<pin name="VDD" x="-25.4" y="5.08" visible="pin" length="short" direction="pas"/>
+<pin name="VSS1" x="-25.4" y="-5.08" visible="pin" length="short" direction="pas"/>
+<pin name="VSS2" x="-25.4" y="-7.62" visible="pin" length="short" direction="pas"/>
+<pin name="RA0/AN0/ULPWU/C12IN0-" x="25.4" y="30.48" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RA1/AN1/C12IN1-" x="25.4" y="27.94" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RA2/AN2/VREF-/CVREF/C2IN+" x="25.4" y="25.4" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RA3/AN3/VREF+/C1IN+" x="25.4" y="22.86" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RA4/TOCKI/C1OUT" x="25.4" y="20.32" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RA5/AN4/!SS!/C2OUT" x="25.4" y="17.78" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RA6/OSC2/CLKOUT" x="25.4" y="15.24" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RA7/OSC1/CLKIN" x="25.4" y="12.7" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RB0/AN12/INT" x="25.4" y="10.16" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RB1/AN10/P1C/C12IN3-" x="25.4" y="7.62" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RB2/AN8/P1B" x="25.4" y="5.08" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RB3/AN9/PGM/C12IN2-" x="25.4" y="2.54" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RB4/AN11/P1D" x="25.4" y="0" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RB5/AN13/!T1G" x="25.4" y="-2.54" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RB6/ICSPCLK" x="25.4" y="-5.08" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RB7/ICSPDAT" x="25.4" y="-7.62" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RC0/T1OSO/T1CKI" x="25.4" y="-10.16" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RC1/T1OSI/CCP2" x="25.4" y="-12.7" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RC2/P1A/CCP1" x="25.4" y="-15.24" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RC3/SCK/SCL" x="25.4" y="-17.78" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RC4/SDI/SDA" x="25.4" y="-20.32" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RC5/SDO" x="25.4" y="-22.86" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RC6/TX/CK" x="25.4" y="-25.4" visible="pin" length="short" direction="pas" rot="R180"/>
+<pin name="RC7/RX/DT" x="25.4" y="-27.94" visible="pin" length="short" direction="pas" rot="R180"/>
+<text x="-22.606" y="32.766" size="1.6764" layer="95" rot="MR180">&gt;NAME</text>
+<text x="-22.606" y="-30.226" size="1.6764" layer="96">&gt;VALUE</text>
+<wire x1="-22.86" y1="33.02" x2="22.86" y2="33.02" width="0.254" layer="94"/>
+<wire x1="22.86" y1="33.02" x2="22.86" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-30.48" x2="-22.86" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-30.48" x2="-22.86" y2="33.02" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PIC16F886">
+<gates>
+<gate name="IC" symbol="PIC16F886" x="0" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="DIL28">
+<connects>
+<connect gate="IC" pin="!MCLR" pad="1"/>
+<connect gate="IC" pin="RA0/AN0/ULPWU/C12IN0-" pad="2"/>
+<connect gate="IC" pin="RA1/AN1/C12IN1-" pad="3"/>
+<connect gate="IC" pin="RA2/AN2/VREF-/CVREF/C2IN+" pad="4"/>
+<connect gate="IC" pin="RA3/AN3/VREF+/C1IN+" pad="5"/>
+<connect gate="IC" pin="RA4/TOCKI/C1OUT" pad="6"/>
+<connect gate="IC" pin="RA5/AN4/!SS!/C2OUT" pad="7"/>
+<connect gate="IC" pin="RA6/OSC2/CLKOUT" pad="10"/>
+<connect gate="IC" pin="RA7/OSC1/CLKIN" pad="9"/>
+<connect gate="IC" pin="RB0/AN12/INT" pad="21"/>
+<connect gate="IC" pin="RB1/AN10/P1C/C12IN3-" pad="22"/>
+<connect gate="IC" pin="RB2/AN8/P1B" pad="23"/>
+<connect gate="IC" pin="RB3/AN9/PGM/C12IN2-" pad="24"/>
+<connect gate="IC" pin="RB4/AN11/P1D" pad="25"/>
+<connect gate="IC" pin="RB5/AN13/!T1G" pad="26"/>
+<connect gate="IC" pin="RB6/ICSPCLK" pad="27"/>
+<connect gate="IC" pin="RB7/ICSPDAT" pad="28"/>
+<connect gate="IC" pin="RC0/T1OSO/T1CKI" pad="11"/>
+<connect gate="IC" pin="RC1/T1OSI/CCP2" pad="12"/>
+<connect gate="IC" pin="RC2/P1A/CCP1" pad="13"/>
+<connect gate="IC" pin="RC3/SCK/SCL" pad="14"/>
+<connect gate="IC" pin="RC4/SDI/SDA" pad="15"/>
+<connect gate="IC" pin="RC5/SDO" pad="16"/>
+<connect gate="IC" pin="RC6/TX/CK" pad="17"/>
+<connect gate="IC" pin="RC7/RX/DT" pad="18"/>
+<connect gate="IC" pin="VDD" pad="20"/>
+<connect gate="IC" pin="VSS1" pad="8"/>
+<connect gate="IC" pin="VSS2" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="Hole">
+<description>3.3mm絶縁付きドリル穴</description>
+<packages>
+<package name="HOLE3.3">
+<hole x="0" y="0" drill="1.2"/>
+<circle x="0" y="0" radius="3.25" width="0.127" layer="21"/>
+<text x="0" y="-1.46" size="0.6096" layer="21">D3,3mm Drill</text>
+<text x="0" y="-4.21" size="0.6096" layer="21">M3 Bolt Outline</text>
+<circle x="0" y="0" radius="4" width="0.6096" layer="16"/>
+</package>
+</packages>
+<symbols>
+<symbol name="HOLE3.3">
+<wire x1="0" y1="1.27" x2="1.27" y2="0" width="1.524" layer="94" curve="-90" cap="flat"/>
+<wire x1="-1.27" y1="0" x2="0" y2="-1.27" width="1.524" layer="94" curve="90" cap="flat"/>
+<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.0508" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.0508" layer="94"/>
+<circle x="0" y="0" radius="2.032" width="0.0508" layer="94"/>
+<circle x="0" y="0" radius="0.508" width="0.0508" layer="94"/>
+<text x="2.032" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="HOLE3.3" prefix="H">
+<gates>
+<gate name="G$1" symbol="HOLE3.3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="M3BOLT" package="HOLE3.3">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3669,28 +3832,130 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R3216W"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R3216W"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R3216W"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="R3216W"/>
 <part name="LED1" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
 <part name="LED2" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
 <part name="LED3" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
 <part name="LED4" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="LED6" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="LED7" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R3216W"/>
 <part name="LED5" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="LED8" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="LED9" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="LED10" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="LED11" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="LED12" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="R13" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="R14" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="LED13" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="LED14" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="R15" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="R18" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="LED15" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="LED16" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="LED17" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="LED18" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="R20" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="LED19" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="LED20" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="R21" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="R22" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="LED21" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="LED22" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="R23" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="R24" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="LED23" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="LED24" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="R25" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="R26" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="LED25" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="LED26" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="R27" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="R28" library="rcl" deviceset="R-EU_" device="R3216W"/>
+<part name="LED27" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="LED28" library="FP-21T for MITS" deviceset="LED" device="5MM"/>
+<part name="U$1" library="PIC" deviceset="PIC16F886" device=""/>
+<part name="H1" library="Hole" deviceset="HOLE3.3" device="M3BOLT"/>
+<part name="H2" library="Hole" deviceset="HOLE3.3" device="M3BOLT"/>
+<part name="H3" library="Hole" deviceset="HOLE3.3" device="M3BOLT"/>
+<part name="H4" library="Hole" deviceset="HOLE3.3" device="M3BOLT"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="R1" gate="G$1" x="-73.66" y="129.54" rot="R90"/>
-<instance part="R2" gate="G$1" x="-66.04" y="129.54" rot="R90"/>
-<instance part="R3" gate="G$1" x="-58.42" y="129.54" rot="R90"/>
-<instance part="R4" gate="G$1" x="-50.8" y="129.54" rot="R90"/>
-<instance part="R5" gate="G$1" x="-43.18" y="129.54" rot="R90"/>
-<instance part="LED1" gate="G$1" x="-73.66" y="119.38"/>
-<instance part="LED2" gate="G$1" x="-66.04" y="119.38"/>
-<instance part="LED3" gate="G$1" x="-58.42" y="119.38"/>
-<instance part="LED4" gate="G$1" x="-50.8" y="119.38"/>
-<instance part="LED5" gate="G$1" x="-43.18" y="119.38"/>
+<instance part="R1" gate="G$1" x="-48.26" y="127"/>
+<instance part="R2" gate="G$1" x="-48.26" y="119.38"/>
+<instance part="R3" gate="G$1" x="-48.26" y="111.76"/>
+<instance part="R4" gate="G$1" x="-48.26" y="104.14"/>
+<instance part="LED1" gate="G$1" x="-58.42" y="127" rot="R270"/>
+<instance part="LED2" gate="G$1" x="-58.42" y="119.38" rot="R270"/>
+<instance part="LED3" gate="G$1" x="-58.42" y="111.76" rot="R270"/>
+<instance part="LED4" gate="G$1" x="-58.42" y="104.14" rot="R270"/>
+<instance part="R6" gate="G$1" x="-48.26" y="88.9"/>
+<instance part="R7" gate="G$1" x="-48.26" y="81.28"/>
+<instance part="LED6" gate="G$1" x="-58.42" y="88.9" rot="R270"/>
+<instance part="LED7" gate="G$1" x="-58.42" y="81.28" rot="R270"/>
+<instance part="R5" gate="G$1" x="-48.26" y="96.52"/>
+<instance part="R8" gate="G$1" x="-15.24" y="127"/>
+<instance part="LED5" gate="G$1" x="-58.42" y="96.52" rot="R270"/>
+<instance part="LED8" gate="G$1" x="-25.4" y="127" rot="R270"/>
+<instance part="R9" gate="G$1" x="-15.24" y="119.38"/>
+<instance part="R10" gate="G$1" x="-15.24" y="111.76"/>
+<instance part="LED9" gate="G$1" x="-25.4" y="119.38" rot="R270"/>
+<instance part="LED10" gate="G$1" x="-25.4" y="111.76" rot="R270"/>
+<instance part="R11" gate="G$1" x="-15.24" y="104.14"/>
+<instance part="R12" gate="G$1" x="-15.24" y="96.52"/>
+<instance part="LED11" gate="G$1" x="-25.4" y="104.14" rot="R270"/>
+<instance part="LED12" gate="G$1" x="-25.4" y="96.52" rot="R270"/>
+<instance part="R13" gate="G$1" x="-15.24" y="88.9"/>
+<instance part="R14" gate="G$1" x="-15.24" y="81.28"/>
+<instance part="LED13" gate="G$1" x="-25.4" y="88.9" rot="R270"/>
+<instance part="LED14" gate="G$1" x="-25.4" y="81.28" rot="R270"/>
+<instance part="R15" gate="G$1" x="-121.92" y="127"/>
+<instance part="R16" gate="G$1" x="-121.92" y="119.38"/>
+<instance part="R17" gate="G$1" x="-121.92" y="111.76"/>
+<instance part="R18" gate="G$1" x="-121.92" y="104.14"/>
+<instance part="LED15" gate="G$1" x="-132.08" y="127" rot="R270"/>
+<instance part="LED16" gate="G$1" x="-132.08" y="119.38" rot="R270"/>
+<instance part="LED17" gate="G$1" x="-132.08" y="111.76" rot="R270"/>
+<instance part="LED18" gate="G$1" x="-132.08" y="104.14" rot="R270"/>
+<instance part="R19" gate="G$1" x="-121.92" y="96.52"/>
+<instance part="R20" gate="G$1" x="-121.92" y="88.9"/>
+<instance part="LED19" gate="G$1" x="-132.08" y="96.52" rot="R270"/>
+<instance part="LED20" gate="G$1" x="-132.08" y="88.9" rot="R270"/>
+<instance part="R21" gate="G$1" x="-121.92" y="81.28"/>
+<instance part="R22" gate="G$1" x="-86.36" y="127" rot="MR0"/>
+<instance part="LED21" gate="G$1" x="-132.08" y="81.28" rot="R270"/>
+<instance part="LED22" gate="G$1" x="-96.52" y="127" rot="R270"/>
+<instance part="R23" gate="G$1" x="-86.36" y="119.38"/>
+<instance part="R24" gate="G$1" x="-86.36" y="111.76"/>
+<instance part="LED23" gate="G$1" x="-96.52" y="119.38" rot="R270"/>
+<instance part="LED24" gate="G$1" x="-96.52" y="111.76" rot="R270"/>
+<instance part="R25" gate="G$1" x="-86.36" y="104.14"/>
+<instance part="R26" gate="G$1" x="-86.36" y="96.52"/>
+<instance part="LED25" gate="G$1" x="-96.52" y="104.14" rot="R270"/>
+<instance part="LED26" gate="G$1" x="-96.52" y="96.52" rot="R270"/>
+<instance part="R27" gate="G$1" x="-86.36" y="88.9"/>
+<instance part="R28" gate="G$1" x="-86.36" y="81.28"/>
+<instance part="LED27" gate="G$1" x="-96.52" y="88.9" rot="R270"/>
+<instance part="LED28" gate="G$1" x="-96.52" y="81.28" rot="R270"/>
+<instance part="U$1" gate="IC" x="-193.04" y="99.06"/>
+<instance part="H1" gate="G$1" x="-218.44" y="25.4"/>
+<instance part="H2" gate="G$1" x="-208.28" y="25.4"/>
+<instance part="H3" gate="G$1" x="-198.12" y="25.4"/>
+<instance part="H4" gate="G$1" x="-187.96" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -3699,35 +3964,196 @@ Source: www.luxeon.com&lt;p&gt;</description>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="-73.66" y1="124.46" x2="-73.66" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="127" x2="-55.88" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="-66.04" y1="124.46" x2="-66.04" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="119.38" x2="-55.88" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="-58.42" y1="124.46" x2="-58.42" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="111.76" x2="-55.88" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="LED4" gate="G$1" pin="A"/>
-<wire x1="-50.8" y1="124.46" x2="-50.8" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="104.14" x2="-55.88" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="LED6" gate="G$1" pin="A"/>
+<wire x1="-53.34" y1="88.9" x2="-55.88" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="LED7" gate="G$1" pin="A"/>
+<wire x1="-53.34" y1="81.28" x2="-55.88" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="LED5" gate="G$1" pin="A"/>
-<wire x1="-43.18" y1="124.46" x2="-43.18" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="96.52" x2="-55.88" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="LED8" gate="G$1" pin="A"/>
+<wire x1="-20.32" y1="127" x2="-22.86" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="LED9" gate="G$1" pin="A"/>
+<wire x1="-20.32" y1="119.38" x2="-22.86" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="LED10" gate="G$1" pin="A"/>
+<wire x1="-20.32" y1="111.76" x2="-22.86" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="LED11" gate="G$1" pin="A"/>
+<wire x1="-20.32" y1="104.14" x2="-22.86" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="LED12" gate="G$1" pin="A"/>
+<wire x1="-20.32" y1="96.52" x2="-22.86" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="LED13" gate="G$1" pin="A"/>
+<wire x1="-20.32" y1="88.9" x2="-22.86" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="LED14" gate="G$1" pin="A"/>
+<wire x1="-20.32" y1="81.28" x2="-22.86" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="LED15" gate="G$1" pin="A"/>
+<wire x1="-127" y1="127" x2="-129.54" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="LED16" gate="G$1" pin="A"/>
+<wire x1="-127" y1="119.38" x2="-129.54" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="LED17" gate="G$1" pin="A"/>
+<wire x1="-127" y1="111.76" x2="-129.54" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="LED18" gate="G$1" pin="A"/>
+<wire x1="-127" y1="104.14" x2="-129.54" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="LED19" gate="G$1" pin="A"/>
+<wire x1="-127" y1="96.52" x2="-129.54" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="R20" gate="G$1" pin="1"/>
+<pinref part="LED20" gate="G$1" pin="A"/>
+<wire x1="-127" y1="88.9" x2="-129.54" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="LED21" gate="G$1" pin="A"/>
+<wire x1="-127" y1="81.28" x2="-129.54" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="R23" gate="G$1" pin="1"/>
+<pinref part="LED23" gate="G$1" pin="A"/>
+<wire x1="-91.44" y1="119.38" x2="-93.98" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="R24" gate="G$1" pin="1"/>
+<pinref part="LED24" gate="G$1" pin="A"/>
+<wire x1="-91.44" y1="111.76" x2="-93.98" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="R25" gate="G$1" pin="1"/>
+<pinref part="LED25" gate="G$1" pin="A"/>
+<wire x1="-91.44" y1="104.14" x2="-93.98" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="R26" gate="G$1" pin="1"/>
+<pinref part="LED26" gate="G$1" pin="A"/>
+<wire x1="-91.44" y1="96.52" x2="-93.98" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="R27" gate="G$1" pin="1"/>
+<pinref part="LED27" gate="G$1" pin="A"/>
+<wire x1="-91.44" y1="88.9" x2="-93.98" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="R28" gate="G$1" pin="1"/>
+<pinref part="LED28" gate="G$1" pin="A"/>
+<wire x1="-91.44" y1="81.28" x2="-93.98" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="LED22" gate="G$1" pin="A"/>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="-93.98" y1="127" x2="-91.44" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
